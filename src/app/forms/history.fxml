@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="816" styleClass="window ">
+  <children>
+    <ScrollPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="96" fitToHeight="true" fitToWidth="true" focusTraversable="false" hbarPolicy="AS_NEEDED" hvalue="0" id="container" layoutX="0" layoutY="96" prefHeight="384" prefWidth="816" style="-fx-background: -default;" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+      <content>
+        <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="384" prefWidth="816" styleClass="">
+          <children>
+            <VBox AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="TOP_LEFT" focusTraversable="false" id="vbox" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="96" minWidth="-1" prefHeight="96" prefWidth="816" spacing="0" style="-fx-background-color: -default; -fx-pref-height: -1; -fx-min-height: 96;" styleClass="">
+              <children/>
+            </VBox>
+            <Data cursor="DEFAULT" enabled="1" id="data-vbox" visible="1"/>
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+    <Data cursor="DEFAULT" enabled="1" id="data-container" visible="1"/>
+    <Panel AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel11" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="96" prefWidth="816" style="-fx-border-width: 0 0 1 0; -fx-border-color: -light-gray; -fx-background-color: -default;" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="50" id="image_load_clock" layoutX="80" layoutY="24" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image_load_clock" image="" visible="1"/>
+        <VBox AnchorPane.leftAnchor="128" AnchorPane.rightAnchor="368" alignment="CENTER_LEFT" focusTraversable="false" id="vbox12" layoutX="128" layoutY="23" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="50" prefWidth="320" spacing="0" styleClass="">
+          <children>
+            <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="userName" layoutX="0" layoutY="11" prefHeight="28.125" prefWidth="207.87890625" style="-fx-font-size: 24;" styleClass="label " text="История действий" textAlignment="LEFT" textFill="#000000" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="24"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-userName" visible="1"/>
+          </children>
+        </VBox>
+        <HBox alignment="CENTER" focusTraversable="false" id="hbox21" layoutX="0" layoutY="8" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" opacity="0.7" prefHeight="80" prefWidth="64" spacing="5" style="-fx-border-width: 0 1 0 0; -fx-border-color: -light-gray;" styleClass="icon ">
+          <children>
+            <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="48" id="image_load_back" layoutX="16" layoutY="16" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass=" " textFill="#000000" width="32">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </ImageViewEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-image_load_back" image="" visible="1"/>
+          </children>
+        </HBox>
+        <Button AnchorPane.rightAnchor="23" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button5" layoutX="645" layoutY="32" prefHeight="32" prefWidth="-1" styleClass="button " text="Восстановить всё" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Roboto" size="12"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-vbox12" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-hbox21" visible="1"/>
+        <Data cursor="DEFAULT" enabled="" id="data-button5" visible="1"/>
+        <Button AnchorPane.rightAnchor="180" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button" layoutX="484" layoutY="32" prefHeight="32" prefWidth="-1" styleClass="button outline " text="Очистить историю" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="Roboto" size="12"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="Roboto" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel11" visible="1"/>
+  </children>
+</AnchorPane>

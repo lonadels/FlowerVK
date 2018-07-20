@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="192" prefWidth="384" styleClass="window tr ">
+  <children>
+    <TilePane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" hgap="5" id="tilePane" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="192" prefRows="5" prefWidth="384" styleClass="" tileAlignment="CENTER" vgap="5">
+      <children>
+        <Panel AnchorPane.leftAnchor="336" AnchorPane.rightAnchor="224" AnchorPane.topAnchor="40" backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="5" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="64" layoutY="68" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="56" prefWidth="256" styleClass="loaderRect " titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <VBox AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" id="vbox" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="56" prefWidth="256" spacing="5" styleClass="">
+              <padding>
+                <Insets bottom="0" left="14" right="14" top="0"/>
+              </padding>
+              <children>
+                <HBox alignment="TOP_LEFT" focusTraversable="false" id="hbox" layoutX="14" layoutY="14" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="15" prefWidth="228" spacing="3" styleClass="">
+                  <children>
+                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="titleFunc" layoutX="0" layoutY="0" prefHeight="14.0625" prefWidth="23.26171875" styleClass="label " text="Title" textAlignment="LEFT" underline="false" wrapText="false">
+                      <font>
+                        <Font name="Roboto" size="12"/>
+                      </font>
+                    </LabelEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-titleFunc" visible="1"/>
+                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="percent" layoutX="27" layoutY="0" opacity="0.7" prefHeight="14.0625" prefWidth="15.52734375" styleClass="label " text="0%" textAlignment="LEFT" underline="false" wrapText="false">
+                      <font>
+                        <Font name="Roboto" size="12"/>
+                      </font>
+                    </LabelEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-percent" visible="1"/>
+                  </children>
+                </HBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-hbox" visible="1"/>
+                <ProgressBar focusTraversable="false" id="progressBar" layoutX="14" layoutY="34" prefHeight="9" prefWidth="256" progress="0" styleClass="progress-bar "/>
+                <Data cursor="DEFAULT" enabled="1" id="data-progressBar" visible="1"/>
+              </children>
+            </VBox>
+            <Data cursor="DEFAULT" enabled="1" id="data-vbox" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="Roboto" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+      </children>
+    </TilePane>
+    <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
+    <LabelEx AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="8" alignment="CENTER_RIGHT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="esc" layoutX="8" layoutY="158" prefHeight="22.630859375" prefWidth="141.18017578125" styleClass="label esc " text="Нажмите ESC для отмены" textAlignment="RIGHT" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="11"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-esc" visible="1"/>
+  </children>
+</AnchorPane>

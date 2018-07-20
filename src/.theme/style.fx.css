@@ -1,0 +1,16 @@
+@import 'style_light.fx.css';
+
+.mtitle {
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 18;
+    -fx-padding: 10 0 5 0;
+}
+
+.mtitle.l {
+    -fx-font-family: "Roboto";
+}
+
+.root{
+    -fx-font-size: 12;
+    -fx-font-family: "Roboto";
+}

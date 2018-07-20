@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608" prefWidth="680" styleClass="window ">
+  <children>
+    <VBox AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="BOTTOM_CENTER" focusTraversable="false" id="vbox" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="608" prefWidth="680" spacing="5" styleClass="">
+      <children>
+        <Panel AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panelAlt" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="608" prefWidth="680" style="-fx-background-color: -default;" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <HBox AnchorPane.bottomAnchor="16" AnchorPane.rightAnchor="16" alignment="CENTER_RIGHT" focusTraversable="false" id="hbox" layoutX="576" layoutY="576" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" opacity="0.7" prefHeight="16" prefWidth="88" spacing="3" styleClass="icon ">
+              <children>
+                <LabelEx AnchorPane.bottomAnchor="24" AnchorPane.rightAnchor="40" alignment="CENTER_RIGHT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="ver" layoutX="25" layoutY="1" opacity="0.5" prefHeight="12.890625" prefWidth="43.00634765625" style="-fx-font-size: 11;" styleClass="label " text="{version}" textAlignment="RIGHT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Roboto" size="11"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-ver" visible="1"/>
+                <ImageViewEx AnchorPane.bottomAnchor="16" AnchorPane.rightAnchor="16" autoSize="false" centered="true" focusTraversable="false" height="16" id="image_load_info_auth" layoutX="72" layoutY="0" mosaic="false" mosaicGap="0" opacity="0.8" proportional="false" stretch="false" styleClass=" " textFill="#000000" width="16">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image_load_info_auth" image="" visible="1"/>
+              </children>
+            </HBox>
+            <Data cursor="DEFAULT" enabled="1" id="data-hbox" visible="1"/>
+            <FlowPane AnchorPane.bottomAnchor="48" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" columnHalignment="CENTER" focusTraversable="false" hgap="5" id="tilePane" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="VERTICAL" prefHeight="560" prefWidth="680" rowValignment="CENTER" styleClass="" vgap="35">
+              <padding>
+                <Insets bottom="0" left="0" right="0" top="-35"/>
+              </padding>
+              <children>
+                <Panel backgroundColor="#00000000" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel4" layoutX="240" layoutY="117" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="128" prefWidth="200" style="-fx-pref-width: -1; -fx-pref-height: -1;" styleClass="trPane " titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+                  <children>
+                    <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="128" id="image" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="200">
+                      <font>
+                        <Font name="System Regular" size="12"/>
+                      </font>
+                    </ImageViewEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/flower.png" visible="1"/>
+                    <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="128" id="imageAlt" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="200">
+                      <font>
+                        <Font name="System Regular" size="12"/>
+                      </font>
+                    </ImageViewEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/vk.png" visible="1"/>
+                  </children>
+                  <titleFont>
+                    <Font name="Roboto" size="12"/>
+                  </titleFont>
+                </Panel>
+                <Data cursor="DEFAULT" enabled="1" id="data-panel4" visible="1"/>
+                <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="240" layoutY="280" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="128" prefWidth="200" style="-fx-background-color: -default;" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+                  <children>
+                    <TextField AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="login" layoutX="0" layoutY="0" prefColumnCount="12" prefHeight="40" prefWidth="168" promptText="Телефон или Email" styleClass="text-input text-field " text="">
+                      <font>
+                        <Font name="Roboto" size="13"/>
+                      </font>
+                    </TextField>
+                    <PasswordField AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="40" alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="password" layoutX="0" layoutY="40" prefColumnCount="12" prefHeight="40" prefWidth="168" promptText="Пароль" text="">
+                      <font>
+                        <Font name="Roboto" size="13"/>
+                      </font>
+                      <styleClass xmlns:fx="http://javafx.com/fxml">
+                        <String fx:value="text-input"/>
+                        <String fx:value="text-field"/>
+                        <String fx:value="password-field"/>
+                      </styleClass>
+                    </PasswordField>
+                    <Button AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="1" AnchorPane.topAnchor="96" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="0" layoutY="96" prefHeight="32" prefWidth="-1" styleClass="button " text="Войти" textAlignment="CENTER" underline="false" wrapText="false">
+                      <font>
+                        <Font name="Roboto" size="12"/>
+                      </font>
+                    </Button>
+                    <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+                    <Data cursor="DEFAULT" enabled="1" id="data-password" visible="1"/>
+                    <Data cursor="DEFAULT" enabled="1" id="data-login" visible="1"/>
+                  </children>
+                  <titleFont>
+                    <Font name="Roboto" size="12"/>
+                  </titleFont>
+                </Panel>
+                <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+              </children>
+            </FlowPane>
+            <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="Roboto" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
+      </children>
+    </VBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-vbox" visible="1"/>
+    <Panel AnchorPane.bottomAnchor="72" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" backgroundColor="#518bcb" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel3" layoutX="0" layoutY="464" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="72" prefWidth="680" styleClass="autoAuth " titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <VBox AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER_LEFT" focusTraversable="false" id="vboxAlt" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="72" prefWidth="680" spacing="0" styleClass="">
+          <padding>
+            <Insets bottom="0" left="20" right="20" top="0"/>
+          </padding>
+          <children>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="20" layoutY="18" prefHeight="20" prefWidth="488" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white" styleClass="label " text="Авторизация" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto Bold" size="16"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="20" layoutY="38" opacity="0.7" prefHeight="16" prefWidth="488" style="-fx-font-size: 12; -fx-text-fill: white" styleClass="label " text="Нажмите для входа в аккаунт по сохранённым данным" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+          </children>
+        </VBox>
+        <Data cursor="DEFAULT" enabled="1" id="data-vboxAlt" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="Roboto" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel3" visible="1"/>
+  </children>
+</AnchorPane>

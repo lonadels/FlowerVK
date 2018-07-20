@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504" prefWidth="744" styleClass="window tr ">
+  <children>
+    <TilePane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" hgap="5" id="tilePane" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="504" prefRows="5" prefWidth="744" styleClass="" tileAlignment="CENTER" vgap="5">
+      <children>
+        <Panel AnchorPane.leftAnchor="88" AnchorPane.rightAnchor="712" AnchorPane.topAnchor="40" backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="5" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="132" layoutY="120" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="264" prefWidth="480" styleClass="loaderRect " titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <ScrollPane AnchorPane.bottomAnchor="56" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="56" fitToHeight="true" fitToWidth="true" focusTraversable="false" hbarPolicy="NEVER" hvalue="0" id="container" layoutX="0" layoutY="56" prefHeight="152" prefWidth="480" style="-fx-background: -default;" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+              <content>
+                <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="152" prefWidth="480" styleClass="">
+                  <children>
+                    <VBox AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="TOP_LEFT" focusTraversable="false" id="vbox" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="144" prefWidth="480" spacing="10" style="-fx-background-color: -default;" styleClass="">
+                      <padding>
+                        <Insets bottom="16" left="22" right="22" top="16"/>
+                      </padding>
+                      <children/>
+                    </VBox>
+                    <Data cursor="DEFAULT" enabled="1" id="data-vbox" visible="1"/>
+                  </children>
+                </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Data cursor="DEFAULT" enabled="1" id="data-container" visible="1"/>
+            <HBox AnchorPane.bottomAnchor="24" AnchorPane.leftAnchor="16" AnchorPane.rightAnchor="16" alignment="BOTTOM_RIGHT" focusTraversable="false" id="hbox" layoutX="16" layoutY="208" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="32" prefWidth="448" spacing="5" styleClass="">
+              <children>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="buttonCancel" layoutX="292" layoutY="0" prefHeight="32" prefWidth="-1" styleClass="button outline " text="Отмена" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="" focusTraversable="true" graphicTextGap="4" id="buttonOk" layoutX="385" layoutY="0" prefHeight="32" prefWidth="-1" styleClass="button " text="OK" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-buttonOk" visible="1"/>
+                <Data cursor="DEFAULT" enabled="1" id="data-buttonCancel" visible="1"/>
+              </children>
+            </HBox>
+            <Data cursor="DEFAULT" enabled="1" id="data-hbox" visible="1"/>
+            <Panel AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel3" layoutX="0" layoutY="8" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="48" prefWidth="480" style="-fx-border-width: 0 0 1 0; -fx-border-color: -light-gray; -fx-background-color: -default;" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+              <children>
+                <HBox alignment="TOP_LEFT" focusTraversable="false" id="hboxAlt" layoutX="24" layoutY="8" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="25" prefWidth="432" spacing="5" styleClass="">
+                  <children>
+                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="0" layoutY="0" prefHeight="21.09375" prefWidth="54.2900390625" style="-fx-font-size: 18; -fx-font-family: &quot;Roboto Medium&quot;;" styleClass="label " text="Опции" textAlignment="LEFT" underline="false" wrapText="false">
+                      <font>
+                        <Font name="Roboto Medium" size="18"/>
+                      </font>
+                    </LabelEx>
+                    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="60" layoutY="0" opacity="0.7" prefHeight="25" prefWidth="344" styleClass="label " text="Удаление подписчиков" textAlignment="LEFT" underline="false" wrapText="false">
+                      <font>
+                        <Font name="Roboto" size="18"/>
+                      </font>
+                    </LabelEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+                    <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+                  </children>
+                </HBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-hboxAlt" visible="1"/>
+              </children>
+              <titleFont>
+                <Font name="Roboto" size="12"/>
+              </titleFont>
+            </Panel>
+            <Data cursor="DEFAULT" enabled="1" id="data-panel3" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="Roboto" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+      </children>
+    </TilePane>
+    <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
+  </children>
+</AnchorPane>
