@@ -1216,10 +1216,19 @@ class MainModule extends AbstractModule
                     $panel->borderWidth = 0;
                     $panel->classes->add('autoAuthItem');
 
-                    $panel->on("click", function()use($user, &$isDel){
+                    $panel->on("click", function()use($user, &$isDel, &$panels, &$isAuth){
+                    
+                        if($isAuth) return;
+                        
+                        $isAuth = true;
+                    
+                        foreach($panels as $panel){
+                            $panel->opacity = 0.5;
+                        }
+                    
                         if($isDel[$user['id']]) return;
                         $this->thread(function()use($user){
-                            $this->forms->auth->tilePane->enabled=false;      
+                            $this->forms->auth->tilePane->enabled=false;          
                             $autorized = isset($this->vk->user);                            
                             
                             if( $autorized && $this->vk->user->id == $user['id'] ) return;
@@ -1231,7 +1240,7 @@ class MainModule extends AbstractModule
                                 $this->forms->auth->tilePane->enabled=true;
                                 $this->forms->showDialog(ucfirst($this->lang->ERR_AUTH_TITLE), ucfirst($this->lang->ERR_AUTOAUTH_INCORRECT), false);
                                 $this->forms->auth->panel3->managed = $this->forms->auth->panel3->visible = True;    
-                            }     
+                            }       
                         });
                     });
                     
@@ -1306,6 +1315,8 @@ class MainModule extends AbstractModule
                     $panel->on('MouseExit', function()use($delete){
                         $delete->visible=false;
                     });
+                    
+                    $panels[] = $panel;
                     
                     $this->forms->autoAuth->vbox->add($panel);
                 }   

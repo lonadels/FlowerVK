@@ -1,4 +1,4 @@
-ё<?php
+<?php
 namespace app\modules;
 
 use php\compress\ZipFile;
