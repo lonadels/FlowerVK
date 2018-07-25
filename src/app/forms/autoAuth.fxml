@@ -14,7 +14,7 @@
             <Data cursor="DEFAULT" enabled="1" id="data-vbox" visible="1"/>
           </children>
           <titleFont>
-            <Font name="Roboto" size="12"/>
+            <Font name="System Regular" size="12"/>
           </titleFont>
         </Panel>
         <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
