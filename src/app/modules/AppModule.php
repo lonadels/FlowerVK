@@ -42,10 +42,18 @@ class AppModule extends AbstractModule
                 }
                 
                 return App::shutdown();
+            }else{
+                uiLater(function(){
+                    app()->form("splashscreen")->show();
+                    app()->form("splashscreen")->alwaysOnTop = false;
+                });
             }
              
             try {
                 new MainModule();
+                uiLater(function(){
+                    app()->form("splashscreen")->hide();
+                });
             } catch (Exception $e) {
                 uiLaterAndWait(function(){
                     //alert('Произошла ошибка - ' . $e->getMessage());

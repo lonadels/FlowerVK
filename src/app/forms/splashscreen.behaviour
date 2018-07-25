@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="image">
+    <behaviour delay="0" duration="1200" negative="" repeatCount="-1" type="behaviour\custom\RotateAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="imageAlt">
+    <behaviour delay="0" duration="1200" negative="" repeatCount="-1" type="behaviour\custom\RotateAnimationBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

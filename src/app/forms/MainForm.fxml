@@ -31,15 +31,15 @@
                 <Data cursor="DEFAULT" enabled="1" id="data-ico" image="" visible="1"/>
                 <HBox AnchorPane.leftAnchor="32" AnchorPane.rightAnchor="128" AnchorPane.topAnchor="0" alignment="CENTER_LEFT" focusTraversable="false" id="hbox" layoutX="32" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="32" prefWidth="584" spacing="4" styleClass="">
                   <children>
-                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="0" layoutY="9" prefHeight="14.0625" prefWidth="51.99609375" styleClass="label " text="FlowerVK" textAlignment="LEFT" underline="false" wrapText="false">
+                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="0" layoutY="8" prefHeight="15.9609375" prefWidth="49.330078125" styleClass="label " text="FlowerVK" textAlignment="LEFT" underline="false" wrapText="false">
                       <font>
-                        <Font name="Roboto Black" size="12"/>
+                        <Font name="System Regular" size="12"/>
                       </font>
                     </LabelEx>
                     <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
-                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="description" layoutX="56" layoutY="9" opacity="0.7" prefHeight="14.0625" prefWidth="0" styleClass="label " text="" textAlignment="LEFT" underline="false" wrapText="false">
+                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="description" layoutX="54" layoutY="8" opacity="0.7" prefHeight="15.9609375" prefWidth="0" styleClass="label " text="" textAlignment="LEFT" underline="false" wrapText="false">
                       <font>
-                        <Font name="Roboto" size="12"/>
+                        <Font name="System Regular" size="12"/>
                       </font>
                     </LabelEx>
                     <Data cursor="DEFAULT" enabled="1" id="data-description" visible="1"/>
@@ -74,12 +74,12 @@
                 <Data cursor="DEFAULT" enabled="1" id="data-hboxAlt" visible="1"/>
               </children>
               <titleFont>
-                <Font name="Roboto" size="12"/>
+                <Font name="System Regular" size="12"/>
               </titleFont>
             </Panel>
           </children>
           <titleFont>
-            <Font name="Roboto" size="12"/>
+            <Font name="System Regular" size="12"/>
           </titleFont>
         </Panel>
         <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>

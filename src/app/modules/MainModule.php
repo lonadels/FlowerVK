@@ -1260,7 +1260,9 @@ class MainModule extends AbstractModule
                     $delete->visible = false;
                     $delete->image = new UXImage("res://.data/img/cancel.png");
     
-                    $delete->on('click', function()use($user, $panel, &$isDel){
+                    $delete->on('click', function()use($user, $panel, &$isDel, &$isAuth){
+                        if($isAuth) return;
+                    
                         $count = (int) $this->database->query( "SELECT count(*) FROM users" )->fetch()->get('count(*)');
                     
                         $isDel[$user['id']] = true;
@@ -1309,10 +1311,12 @@ class MainModule extends AbstractModule
                     $panel->add($image);
                     $panel->add($delete);
                     
-                    $panel->on('MouseEnter', function()use($delete){
+                    $panel->on('MouseEnter', function()use($delete, &$isAuth){
+                        if($isAuth) return;
                         $delete->visible=true;
                     });
-                    $panel->on('MouseExit', function()use($delete){
+                    $panel->on('MouseExit', function()use($delete, &$isAuth){
+                        if($isAuth) return;
                         $delete->visible=false;
                     });
                     
