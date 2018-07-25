@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532515189500">
+<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532515594375">
   <tree>
     <expanded>
     <path src=""/>
@@ -22,7 +22,7 @@
   <file src="FlowerVK.dnproject"/>
     <file src="src/app/modules/MainFunctions.php"/>
     <file src="src/app/forms/history.php"/>
-    <file src="src/app/modules/MainModule.php"/>
+    <file selected="1" src="src/app/modules/MainModule.php"/>
     <file src="src/app/modules/AdditionFunctions.php"/>
     <file src="src/app/modules/StringUtils.php"/>
     <file src="src/app/modules/AppModule.php"/>
@@ -41,7 +41,7 @@
     <file src="src/app/forms/validate.php"/>
     <file src="src/app/modules/config.php"/>
     <file src="src/.theme/style_light.fx.css"/>
-    <file selected="1" src="src/app/forms/splashscreen.php"/>
+    <file src="src/app/forms/splashscreen.php"/>
   </openedFiles>
   <files/>
   <behaviours>

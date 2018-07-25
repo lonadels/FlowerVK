@@ -1215,34 +1215,6 @@ class MainModule extends AbstractModule
                     $panel->size = [352, 72];
                     $panel->borderWidth = 0;
                     $panel->classes->add('autoAuthItem');
-
-                    $panel->on("click", function()use($user, &$isDel, &$panels, &$isAuth){
-                    
-                        if($isAuth) return;
-                        
-                        $isAuth = true;
-                    
-                        foreach($panels as $panel){
-                            $panel->opacity = 0.5;
-                        }
-                    
-                        if($isDel[$user['id']]) return;
-                        $this->thread(function()use($user){
-                            $this->forms->auth->tilePane->enabled=false;          
-                            $autorized = isset($this->vk->user);                            
-                            
-                            if( $autorized && $this->vk->user->id == $user['id'] ) return;
-                            
-                            if( $this->vk->authToken($user['token']) ){
-                                $this->forms->hideModal();
-                                $this->afterAuth($autorized);
-                            }else{
-                                $this->forms->auth->tilePane->enabled=true;
-                                $this->forms->showDialog(ucfirst($this->lang->ERR_AUTH_TITLE), ucfirst($this->lang->ERR_AUTOAUTH_INCORRECT), false);
-                                $this->forms->auth->panel3->managed = $this->forms->auth->panel3->visible = True;    
-                            }       
-                        });
-                    });
                     
                     $image = new UXImageArea();
                     $image->size = [40, 40];
@@ -1270,6 +1242,35 @@ class MainModule extends AbstractModule
                         $this->database->query( "DELETE FROM users WHERE `id` = ?", [$user['id']] )->update();
                         
                         if($count<=1) $this->forms->hideModal();
+                    });
+                    
+                    $panel->on("click", function()use($user, $delete, &$isDel, &$panels, &$isAuth){
+                    
+                        if($isAuth) return;
+                        
+                        $isAuth = true;
+                        $delete->hide();
+                    
+                        foreach($panels as $panel){
+                            $panel->opacity = 0.5;
+                        }
+                    
+                        if($isDel[$user['id']]) return;
+                        $this->thread(function()use($user){
+                            $this->forms->auth->tilePane->enabled=false;          
+                            $autorized = isset($this->vk->user);                            
+                            
+                            if( $autorized && $this->vk->user->id == $user['id'] ) return;
+                            
+                            if( $this->vk->authToken($user['token']) ){
+                                $this->forms->hideModal();
+                                $this->afterAuth($autorized);
+                            }else{
+                                $this->forms->auth->tilePane->enabled=true;
+                                $this->forms->showDialog(ucfirst($this->lang->ERR_AUTH_TITLE), ucfirst($this->lang->ERR_AUTOAUTH_INCORRECT), false);
+                                $this->forms->auth->panel3->managed = $this->forms->auth->panel3->visible = True;    
+                            }       
+                        });
                     });
 
                     $this->loadAva($image, $user['avatar'] ? $user['avatar'] : "https://vk.com/images/camera_50.png" );
@@ -1316,7 +1317,6 @@ class MainModule extends AbstractModule
                         $delete->visible=true;
                     });
                     $panel->on('MouseExit', function()use($delete, &$isAuth){
-                        if($isAuth) return;
                         $delete->visible=false;
                     });
                     

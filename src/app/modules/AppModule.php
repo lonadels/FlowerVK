@@ -38,7 +38,7 @@ class AppModule extends AbstractModule
                     uiLater(function(){
                         app()->form("loader")->description->text = "Ошибка";
                     });
-                    sleep(5);
+                    sleep(3);
                 }
                 
                 return App::shutdown();
@@ -47,6 +47,7 @@ class AppModule extends AbstractModule
                     app()->form("splashscreen")->show();
                     app()->form("splashscreen")->alwaysOnTop = false;
                 });
+                wait(100);
             }
              
             try {
