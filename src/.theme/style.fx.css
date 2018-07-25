@@ -1,5 +1,9 @@
 @import 'style_light.fx.css';
 
+.text {
+    -fx-font-smoothing-type: gray;
+}
+
 .mtitle {
     -fx-font-family: "Roboto Medium";
     -fx-font-size: 18;
