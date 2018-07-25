@@ -190,7 +190,7 @@ class MainFunctions
                     $this->forms->progressDialog->progressBar->progress = -1;
                 });
             })){
-                $this->forms->showDialog($this->mainModule->lang->ERR, $this->mainModule->lang->ERR_DIALOG_PARSE, false);
+                $this->forms->showDialog($this->mainModule->lang->get('ERR'), $this->mainModule->lang->get('ERR_DIALOG_PARSE'), false);
                 return;
             }
             
