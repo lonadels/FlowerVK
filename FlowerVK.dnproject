@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532702247454">
+<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532713561547">
   <tree>
     <expanded>
     <path src=""/>
       <path src="/src"/>
+      <path src="/src/.data"/>
+      <path src="/src/.theme"/>
       <path src="/src/app"/>
       <path src="/src/app/forms"/>
       <path src="/src/app/modules"/>
@@ -13,14 +15,14 @@
   <file src="FlowerVK.dnproject"/>
     <file src="src/app/modules/MainFunctions.php"/>
     <file src="src/app/forms/history.php"/>
-    <file src="src/app/modules/MainModule.php"/>
+    <file selected="1" src="src/app/modules/MainModule.php"/>
     <file src="src/app/modules/AdditionFunctions.php"/>
     <file src="src/app/modules/StringUtils.php"/>
     <file src="src/app/modules/AppModule.php"/>
     <file src="src/app/forms/loader.php"/>
     <file src="src/.theme/style_dark.fx.css"/>
     <file src="src/.theme/style.fx.css"/>
-    <file selected="1" src="src/app/forms/update.php"/>
+    <file src="src/app/forms/update.php"/>
     <file src="src/app/forms/settings.php"/>
     <file src="src/app/modules/Forms.php"/>
     <file src="src/app/modules/vkuser.php"/>
@@ -36,6 +38,8 @@
     <file src="src/app/modules/Params.php"/>
     <file src="src/app/forms/userStats.php"/>
     <file src="src/app/modules/Localization.php"/>
+    <file src="src/app/forms/statsProgressDialog.php"/>
+    <file src="src/.theme/font.fx.css"/>
   </openedFiles>
   <files/>
   <behaviours>

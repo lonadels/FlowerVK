@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    -fx-font-family: 'Roboto Thin';
+    src: url('/.data/ROBOTO-THIN.TTF'); 
+}
+
+@font-face {
     -fx-font-family: 'Roboto Medium';
     src: url('/.data/ROBOTO-MEDIUM.TTF'); 
 }

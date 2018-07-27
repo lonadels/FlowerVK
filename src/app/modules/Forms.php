@@ -20,7 +20,11 @@ class Forms
         $this->config = $mainModule->config;
     }
 
-    function __get($v){
+    /**
+     * @param string formName
+     * @return UXForm
+     */
+    function __get($v): UXForm {
         $application = Application::get();
         $application->form($v)->mainModule = $this->mainModule;
         $application->form($v)->forms = $this;
@@ -179,6 +183,8 @@ class Forms
                 }
                 
                 $this->currentModal = $dialogForm;
+                
+                $this->loadImages($dialogForm);
                 $this->mainModule->update->draw();    
             });
             

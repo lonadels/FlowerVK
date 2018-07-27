@@ -1347,8 +1347,12 @@ class MainModule extends AbstractModule
     
         $file = $this->dataDir . "\\cache\\{$folder}\\" . $name;
     
-        if( ! file_exists( $file ) )
-            file_put_contents($file, Stream::getContents( $url ));
+        try {
+            if( ! file_exists( $file ) )
+                file_put_contents($file, Stream::getContents( $url ));
+        } catch(Exception $e) {
+            
+        }
             
         return new UXImage($file);
     }
@@ -1368,9 +1372,7 @@ class MainModule extends AbstractModule
     }
     
     public function checkDirs(){
-    
-        var_dump( $this->defaultDirectory() );
-        
+          
         $this->dataDir = $this->defaultDirectory() . "\\FlowerVK";
         
         if( ! is_dir($this->dataDir) )

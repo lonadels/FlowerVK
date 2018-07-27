@@ -39,11 +39,9 @@
 }
 
 .window {
-    -fx-font-family: 'Roboto', Sans-serif;
     -fx-background-color: -default;
 }
 .tr {
-    -fx-font-family: 'Roboto', Sans-serif;
     -fx-background-color: transparent;
 }
 

@@ -67,28 +67,57 @@ class MainFunctions
             $isUser = $dialog->message->user_id > 0;
             
             $this->mainModule->run( function()use($progressName){
-                $this->forms->progressDialog->progressName = $progressName;
-                $this->forms->showModal($this->forms->progressDialog);
+                $this->forms->statsProgressDialog->progressName = $progressName;
+                $this->forms->showModal($this->forms->statsProgressDialog);
                 
-                $this->forms->progressDialog->percent->text = "";
-                $this->forms->progressDialog->titleFunc->text = "Подождите...";
-                $this->forms->progressDialog->progressBar->progress = -1;
+                $this->forms->statsProgressDialog->percent->text = "";
+                $this->forms->statsProgressDialog->hbox->hide();
+                $this->forms->statsProgressDialog->titleFunc->text = "Статистика диалога";
+                $this->forms->statsProgressDialog->progressBar->progress = -1;
             });
             
             $peer_id = $isChat ? $dialog->message->chat_id + 2000000000 : $dialog->message->user_id;
             if( ! $this->mainModule->parseMessages($peer_id, function($count, $offset){
-                static $set;
+            
+                static $lastTime, $timeList, $set;
+
                 if( ! $set ){
                     $this->mainModule->run( function(){
-                        $this->forms->progressDialog->titleFunc->text = "Получение сообщений";  
+                        $this->forms->statsProgressDialog->hbox->show();
+                        $this->forms->statsProgressDialog->titleFunc->text = "Получение сообщений";  
                     });          
                     $set=1;
                 }
                 
+                if( isset($lastTime) ){
+                    $time = microtime(1) - $lastTime;
+                    $timeList[] = $time;
+                    
+                    # todo: fix time left
+                    $ave = ($count / (array_sum($timeList) / count($timeList)))/10000000; // bad math
+                    $left = round( $ave * ($count-$offset) );
+                    
+                    $names = [ "сек", "мин", "час", "д", "мес", "лет" ];
+                    $times = StringUtils::seconds2times( $left );
+        
+                    for( $i = count( $times ) - 1; $i >= 0; $i-- )
+                         $timeLeft .= "$times[$i] " . $names[ $i ] . " ";           
+                    
+                }
+                
+                $lastTime = microtime(1);   
+                
                 $percent = round( $offset * 100 / $count );
-                $this->mainModule->run( function()use($percent){
-                    $this->forms->progressDialog->percent->text = "{$percent}%";
-                    $this->forms->progressDialog->progressBar->progress = $percent;
+                $this->mainModule->run( function()use($percent, $offset, $count, $timeLeft){
+                    $this->forms->statsProgressDialog->percent->text = "{$percent}%";
+                    $this->forms->statsProgressDialog->progressBar->progress = $percent;
+                    $this->forms->statsProgressDialog->count->text = "{$offset}/{$count}";
+                    
+                    $this->mainModule->visman($this->forms->statsProgressDialog->time, isset($timeLeft));
+                    $this->mainModule->visman($this->forms->statsProgressDialog->image_load_clock_min, isset($timeLeft));
+                    
+                    if(isset($timeLeft))
+                        $this->forms->statsProgressDialog->time->text = $timeLeft;
                 });
             }, function($item, $count, $offset)
             
@@ -115,7 +144,7 @@ class MainFunctions
                         
                 if( ! $set && $set=1; )
                     $this->mainModule->run( function(){
-                        $this->forms->progressDialog->titleFunc->text = "Обработка сообщений";  
+                        $this->forms->statsProgressDialog->titleFunc->text = "Обработка сообщений";  
                     });        
                     
                 $fid = $item->from_id;    
@@ -175,19 +204,28 @@ class MainFunctions
                          
                 if( ! $perSetting ){         
                     $perSetting = 1;
-                    $this->mainModule->run( function()use($percent, $offset, $count, &$perSetting){
+                    $this->mainModule->run( function()use($percent, $offset, $count, $timeLeft, &$perSetting){
                         $percent = round( $offset * 100 / $count );  
-                        $this->forms->progressDialog->percent->text = "{$percent}%";
-                        $this->forms->progressDialog->progressBar->progress = $percent;
+                        
+                        $this->forms->statsProgressDialog->percent->text = "{$percent}%";
+                        $this->forms->statsProgressDialog->progressBar->progress = $percent;
+                        $this->forms->statsProgressDialog->count->text = "{$offset}/{$count}";
+                        
+                        $this->mainModule->visman($this->forms->statsProgressDialog->time, isset($timeLeft));
+                        $this->mainModule->visman($this->forms->statsProgressDialog->image_load_clock_min, isset($timeLeft));
+                        
+                        if(isset($timeLeft))
+                            $this->forms->statsProgressDialog->time->text = $timeLeft;
+                        
                         $perSetting = 0;
                     });
                 }
                 
             }, function(){
                 $this->mainModule->run( function(){
-                    $this->forms->progressDialog->percent->text = "";
-                    $this->forms->progressDialog->titleFunc->text = "Подождите...";
-                    $this->forms->progressDialog->progressBar->progress = -1;
+                    $this->forms->statsProgressDialog->percent->text = "";
+                    $this->forms->statsProgressDialog->titleFunc->text = "Подождите...";
+                    $this->forms->statsProgressDialog->progressBar->progress = -1;
                 });
             })){
                 $this->forms->showDialog($this->mainModule->lang->get('ERR'), $this->mainModule->lang->get('ERR_DIALOG_PARSE'), false);
