@@ -5,15 +5,9 @@
       <children>
         <Panel AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panelAlt" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="608" prefWidth="680" style="-fx-background-color: -default;" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
           <children>
-            <HBox AnchorPane.bottomAnchor="16" AnchorPane.rightAnchor="16" alignment="CENTER_RIGHT" focusTraversable="false" id="hbox" layoutX="576" layoutY="576" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" opacity="0.7" prefHeight="16" prefWidth="88" spacing="3" styleClass="icon ">
+            <HBox AnchorPane.bottomAnchor="16" AnchorPane.rightAnchor="16" alignment="CENTER_RIGHT" focusTraversable="false" id="hbox" layoutX="648" layoutY="576" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" opacity="0.7" prefHeight="16" prefWidth="16" spacing="3" styleClass="icon ">
               <children>
-                <LabelEx AnchorPane.bottomAnchor="24" AnchorPane.rightAnchor="40" alignment="CENTER_RIGHT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="ver" layoutX="27" layoutY="0" opacity="0.5" prefHeight="14.630859375" prefWidth="41.486328125" style="-fx-font-size: 11;" styleClass="label " text="{version}" textAlignment="RIGHT" underline="false" wrapText="false">
-                  <font>
-                    <Font name="System Regular" size="11"/>
-                  </font>
-                </LabelEx>
-                <Data cursor="DEFAULT" enabled="1" id="data-ver" visible="1"/>
-                <ImageViewEx AnchorPane.bottomAnchor="16" AnchorPane.rightAnchor="16" autoSize="false" centered="true" focusTraversable="false" height="16" id="image_load_info_auth" layoutX="72" layoutY="0" mosaic="false" mosaicGap="0" opacity="0.8" proportional="false" stretch="false" styleClass=" " textFill="#000000" width="16">
+                <ImageViewEx AnchorPane.bottomAnchor="16" AnchorPane.rightAnchor="16" autoSize="false" centered="true" focusTraversable="false" height="16" id="image_load_info_auth" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" opacity="0.8" proportional="false" stretch="false" styleClass=" " textFill="#000000" width="16">
                   <font>
                     <Font name="System Regular" size="12"/>
                   </font>
