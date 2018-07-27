@@ -10,7 +10,7 @@
           </font>
         </ImageViewEx>
         <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/update.png" visible="1"/>
-        <LabelEx alignment="BOTTOM_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="107" layoutY="215" prefHeight="48" prefWidth="115" style="-fx-text-fill: -primary-color; -fx-font-size: 20;" styleClass="label " text="Обновление" textAlignment="CENTER" textFill="#518bcb" underline="false" wrapText="false">
+        <LabelEx alignment="BOTTOM_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="96" layoutY="215" prefHeight="48" prefWidth="136" style="-fx-text-fill: -primary-color; -fx-font-size: 20;" styleClass="label " text="Обновление" textAlignment="CENTER" textFill="#518bcb" underline="false" wrapText="false">
           <font>
             <Font name="System Regular" size="20"/>
           </font>

@@ -1351,9 +1351,25 @@ class MainModule extends AbstractModule
         return new UXImage($file);
     }
     
-    public function checkDirs(){
+    public function defaultDirectory(): String {
+    
+        $os = strtoupper(System::getProperty("os.name"));
         
-        $this->dataDir = System::getEnv()['APPDATA'] . "\\FlowerVK";
+        if (str::contains($os, "WIN"))
+            return System::getEnv()["APPDATA"];
+        elseif (str::contains($os, "MAC"))
+            return System::getProperty("user.home") + "/Library/Application Support";
+        elseif (str::contains($os, "NUX"))
+            return System::getProperty("user.home");
+            
+        return System::getProperty("user.dir");
+    }
+    
+    public function checkDirs(){
+    
+        var_dump( $this->defaultDirectory() );
+        
+        $this->dataDir = $this->defaultDirectory() . "\\FlowerVK";
         
         if( ! is_dir($this->dataDir) )
             mkdir($this->dataDir);
