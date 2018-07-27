@@ -117,7 +117,7 @@ class MainModule extends AbstractModule
             $this->forms = new Forms($this);
             $this->update = new Updater($this);
             $this->vk = new VKAPI($this);
-            $this->lang = new Localization('ru');
+            $this->lang = new Localization('langs/ru-RU');
             $this->strings = new StringUtils($this);
             
             $this->mainFunctions = new MainFunctions($this);
@@ -504,7 +504,7 @@ class MainModule extends AbstractModule
         if( $auth->error_description == 'wrong code' )
             $this->forms->showDialog("Ошибка", "Вы ввели неверный код", false);
         else   
-            $this->forms->showDialog(ucfirst($this->lang->ERR_AUTH_TITLE), ucfirst($this->lang->ERR_AUTH_INCORRECT), false); 
+            $this->forms->showDialog(ucfirst($this->lang->get('ERR_AUTH_TITLE')), ucfirst($this->lang->get('ERR_AUTH_INCORRECT')), false); 
     }
     
     public function validation($phone=null){
@@ -803,7 +803,7 @@ class MainModule extends AbstractModule
         $res = $this->vk->method( ["messages","getDialogs"], new MethodParams(["count"=>"10", "offset"=>$offset]) );
 
         if( ! isset($res->response->items) )
-            return $this->forms->showDialog($this->lang->ERR, $this->lang->ERR_DIALOG_PARSE, false);
+            return $this->forms->showDialog($this->lang->get('ERR'), $this->lang->get('ERR_DIALOG_PARSE'), false);
           
         $dialogs = $res->response->items;  
         if( empty($dialogs) ){ 
@@ -1086,7 +1086,7 @@ class MainModule extends AbstractModule
                                 $this->afterAuth($autorized);
                             }else{
                                 $this->forms->auth->tilePane->enabled=true;
-                                $this->forms->showDialog(ucfirst($this->lang->ERR_AUTH_TITLE), ucfirst($this->lang->ERR_AUTOAUTH_INCORRECT), false);
+                                $this->forms->showDialog(ucfirst($this->lang->get('ERR_AUTH_TITLE')), ucfirst($this->lang->get('ERR_AUTOAUTH_INCORRECT')), false);
                                 $this->forms->auth->panel3->managed = $this->forms->auth->panel3->visible = True;    
                             }     
                         });
@@ -1268,7 +1268,7 @@ class MainModule extends AbstractModule
                                 $this->afterAuth($autorized);
                             }else{
                                 $this->forms->auth->tilePane->enabled=true;
-                                $this->forms->showDialog(ucfirst($this->lang->ERR_AUTH_TITLE), ucfirst($this->lang->ERR_AUTOAUTH_INCORRECT), false);
+                                $this->forms->showDialog(ucfirst($this->lang->get('ERR_AUTH_TITLE')), ucfirst($this->lang->get('ERR_AUTOAUTH_INCORRECT')), false);
                                 $this->forms->auth->panel3->managed = $this->forms->auth->panel3->visible = True;    
                             }       
                         });
@@ -1394,10 +1394,10 @@ class MainModule extends AbstractModule
         $password = trim($password);
     
         $errors = [
-           $this->lang->ERR_AUTH_EMPTYDATA => ( empty($login) && empty($password) ),
-           $this->lang->ERR_AUTH_EMPTYLOGIN => (bool) empty($login),
-           $this->lang->ERR_AUTH_EMPTYPASSWORD => (bool) empty($password),
-           $this->lang->ERR_AUTH_INCORRECT => (bool) ( strlen($password) < 6 ),
+           $this->lang->get('ERR_AUTH_EMPTYDATA') => ( empty($login) && empty($password) ),
+           $this->lang->get('ERR_AUTH_EMPTYLOGIN') => (bool) empty($login),
+           $this->lang->get('ERR_AUTH_EMPTYPASSWORD') => (bool) empty($password),
+           $this->lang->get('ERR_AUTH_INCORRECT') => (bool) ( strlen($password) < 6 ),
         ];
     
         foreach ($errors as $error=>$expersion)
@@ -1406,7 +1406,7 @@ class MainModule extends AbstractModule
         if( ! $expersion )
             return True;
         
-        $this->forms->showDialog(ucfirst($this->lang->ERR_AUTH_TITLE), ucfirst($error), false);    
+        $this->forms->showDialog(ucfirst($this->lang->get('ERR_AUTH_TITLE')), ucfirst($error), false);    
         return False;      
     }
 
@@ -1420,7 +1420,7 @@ class MainModule extends AbstractModule
                 return $this->afterAuth();
                 
             $this->forms->auth->tilePane->enabled=true;      
-            $this->forms->showDialog(ucfirst($this->lang->ERR_AUTH_TITLE), ucfirst($this->lang->ERR_AUTH_INCORRECT), false);
+            $this->forms->showDialog(ucfirst($this->lang->get('ERR_AUTH_TITLE')), ucfirst($this->lang->get('ERR_AUTH_INCORRECT')), false);
                 
         });    
     }

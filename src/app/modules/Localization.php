@@ -1,25 +1,37 @@
 <?php
 namespace app\modules;
 
-use ErrorException;
-use Exception;
-use app;
+use std;
 
-class Localization 
+class Localization
 {
-    public $lang = 'ru';
-    private $messages;
-    private $v;
-    
-    function __construct($lang){
-        $this->setLang($lang);
+    /**
+     * @var Scanner
+     */
+    private $scanner;
+	
+    public function __construct($path)
+    {
+        $this->scanner = new Scanner(Stream::of($path . '.lang'));
     }
-    function setLang($lang){
-        $this->lang = in_array($lang,['ru']) ? $lang : "ru";
-    }
-    
-    function __get($v){
-        $const = "app\\modules\\lang_{$this->lang}::$v";
-        return constant($const);
+	
+    /**
+     * @param string $object
+     * @return string
+     */
+    public function get($object)
+    {
+        $lines = [];
+        
+        while ($this->scanner->hasNextLine()) {
+            $line = $this->scanner->nextLine();
+            $split = str::split($line, '=', 2);
+            
+            if (count($split) > 1) {
+                $lines[str::trim($split[0])] = str::trim($split[1]);
+            }
+        }
+        
+        return $lines[$object];
     }
 }
