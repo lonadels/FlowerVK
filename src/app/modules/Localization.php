@@ -6,25 +6,24 @@ use std;
 class Localization
 {
     /**
-     * @var Scanner
+     * @var String
      */
-    private $scanner;
-	
-    public function __construct($path)
-    {
-        $this->scanner = new Scanner(Stream::of($path . '.lang'));
+    private $path;
+    
+    public function __construct($path){
+        $this->path = $path;       
     }
-	
+    
     /**
      * @param string $object
      * @return string
      */
-    public function get($object)
-    {
+    public function get($object){
+        $scanner = new Scanner(Stream::of("res://langs/" . $this->path . '.lang'));
         $lines = [];
         
-        while ($this->scanner->hasNextLine()) {
-            $line = $this->scanner->nextLine();
+        while ($scanner->hasNextLine()) {
+            $line = $scanner->nextLine();
             $split = str::split($line, '=', 2);
             
             if (count($split) > 1) {

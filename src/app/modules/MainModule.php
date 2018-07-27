@@ -117,7 +117,7 @@ class MainModule extends AbstractModule
             $this->forms = new Forms($this);
             $this->update = new Updater($this);
             $this->vk = new VKAPI($this);
-            $this->lang = new Localization('langs/ru-RU');
+            $this->lang = new Localization('ru-RU');
             $this->strings = new StringUtils($this);
             
             $this->mainFunctions = new MainFunctions($this);
