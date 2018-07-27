@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532700622424">
+<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532700722128">
   <tree>
     <expanded>
     <path src=""/>
       <path src="/src"/>
+      <path src="/src/app"/>
+      <path src="/src/app/modules"/>
     </expanded>
   </tree>
   <openedFiles>
@@ -22,7 +24,7 @@
     <file src="src/app/modules/Forms.php"/>
     <file src="src/app/modules/vkuser.php"/>
     <file src="src/app/forms/MainForm.php"/>
-    <file src="src/app/modules/Updater.php"/>
+    <file selected="1" src="src/app/modules/Updater.php"/>
     <file src="src/app/forms/auth.php"/>
     <file src="src/app/forms/mainMenu.php"/>
     <file src="src/app/forms/autoAuth.php"/>
@@ -32,7 +34,7 @@
     <file src="src/app/forms/splashscreen.php"/>
     <file src="src/app/modules/Params.php"/>
     <file src="src/app/forms/userStats.php"/>
-    <file selected="1" src="src/app/modules/Localization.php"/>
+    <file src="src/app/modules/Localization.php"/>
   </openedFiles>
   <files/>
   <behaviours>
