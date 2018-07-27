@@ -99,7 +99,6 @@ class Updater
     
     function draw(){
         uiLater(function(){
-            $this->mainModule->forms->auth->ver->text = "v".floatval($this->ver);
             $this->mainModule->forms->about->ver->text = "Версия ".floatval($this->ver)." сборка {$this->build}";  
         });
     }

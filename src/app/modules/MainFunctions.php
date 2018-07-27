@@ -297,8 +297,7 @@ class MainFunctions
             
             if( $scount > 5 ){
                 $this->mainModule->run(function(){
-                    foreach ($this->forms->stickers->tilePaneAlt->children as $child)
-                        $child->free();
+                    $this->forms->stickers->tilePaneAlt->children->clear();
                 });
             }
             
@@ -463,17 +462,10 @@ class MainFunctions
             
             $this->mainModule->run( function()use($stats, $allWords, $allAtts, $allDocs, $wordsCount, $progressName, $mainStats, $attachments, $docs, $scount, $stickers, $mcText, $dialog, $count, $dates, $users, $chatUsers, $isChat, $isUser, $mdates, $firstDate, $lastDate, $name, $ava){     
 
-                foreach ($this->forms->statistics->vbox3->children as $child)
-                    $child->free();
-                    
-                foreach ($this->forms->statistics->vbox9->children as $child)
-                    $child->free();
-                    
-                foreach ($this->forms->statistics->vbox11->children as $child)
-                    $child->free();
-                    
-                foreach ($this->forms->statistics->vbox4->children as $child)
-                    $child->free();
+                $this->forms->statistics->vbox3->children->clear();
+                $this->forms->statistics->vbox9->children->clear();
+                $this->forms->statistics->vbox11->children->clear();
+                $this->forms->statistics->vbox4->children->clear();
                     
                 unset($this->forms->statistics->vbox4->andMore);    
 
@@ -769,11 +761,11 @@ class MainFunctions
                 
                 $cmo = count($mdates[$lisUser ? $user->id : -$group->id]) > 1;
                 
-                $this->mainModule->visman($this->forms->statistics->panelAlt, $cmo);
-                $this->mainModule->visman($this->forms->statistics->hbox3, $cmo);
+                $this->mainModule->visman($this->forms->userStats->panelAlt, $cmo);
                 
                 if($cmo)
                     $this->mainModule->graphic( $this->forms->userStats->canvas, $mdates[$lisUser ? $user->id : -$group->id], $this->forms->userStats->panelAlt );
+                    
             });
         });
         

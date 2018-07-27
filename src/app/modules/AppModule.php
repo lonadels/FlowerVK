@@ -52,9 +52,6 @@ class AppModule extends AbstractModule
              
             try {
                 new MainModule();
-                uiLater(function(){
-                    app()->form("splashscreen")->hide();
-                });
             } catch (Exception $e) {
                 uiLaterAndWait(function(){
                     //alert('Произошла ошибка - ' . $e->getMessage());

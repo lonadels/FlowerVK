@@ -131,6 +131,8 @@ class MainModule extends AbstractModule
                 $this->forms->MainForm->addStylesheet(".theme/style_{$theme}.fx.css");
                 $this->forms->MainForm->show();
                 
+                $this->forms->splashscreen->hide();
+                
                 foreach ( ['ico', 'min', 'max', 'close'] as $e )
                     $this->forms->MainForm->$e->image = new UXImage("res://.data/img/{$theme}/{$e}.png");
                 
@@ -162,8 +164,7 @@ class MainModule extends AbstractModule
                 $this->database->query("DELETE FROM history;")->update();
                     
                 $this->run(function(){
-                    foreach ( $this->forms->history->children as $c )
-                        $c->free();    
+                    $this->forms->history->children->clear();
                 });    
             }
         });
