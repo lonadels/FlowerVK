@@ -1,0 +1,16 @@
+YES=Да
+NO=Нет
+OK=ОК
+CANCEL=Отмена
+
+ERR=Ошибка
+ERR_AUTH_TITLE=не удаётся войти
+ERR_AUTH_INCORRECT=пожалуйста, проверьте правильность написания логина и пароля
+ERR_AUTH_EMPTYDATA=необходимо заполнить все поля
+ERR_AUTH_EMPTYLOGIN=необходимо ввести телефон или EMail
+ERR_AUTH_EMPTYPASSWORD=необходимо ввести пароль
+ERR_DIALOG_PARSE=Произошла ошибка во время обработки диалога. Проверьте стабильность интернет-соединения.
+ERR_AUTOAUTH_INCORRECT=возможно, токен устарел
+
+AUTOAUTH_TITLE=автоматический вход
+AUTOAUTH_CONFIRM=войти в аккаунт, используя сохранённые данные?

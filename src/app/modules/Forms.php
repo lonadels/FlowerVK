@@ -188,10 +188,10 @@ class Forms
     
     function showDialog($title, $text, $cancel=true, $cancelText=null, $okText=null){
         if( ! isset( $cancelText ) )
-            $cancelText = $this->mainModule->lang->CANCEL;
+            $cancelText = $this->mainModule->lang->get('CANCEL');
             
         if( ! isset( $okText ) )
-            $okText = $this->mainModule->lang->OK;
+            $okText = $this->mainModule->lang->get('OK');
             
         $this->mainModule->run( function()use($title, $text, $cancel, &$dialog, $cancelText, $okText){
             $dialog = $this->modalDialog;
