@@ -47,7 +47,6 @@ class AppModule extends AbstractModule
                     app()->form("splashscreen")->show();
                     app()->form("splashscreen")->alwaysOnTop = false;
                 });
-                wait(100);
             }
              
             try {

@@ -125,11 +125,12 @@ class MainModule extends AbstractModule
             
             $count = (int) $this->database->query( "SELECT count(*) FROM users" )->fetch()->get('count(*)');
 
-            uiLaterAndWait(function()use($count){
+            uiLater(function()use($count){
                 $theme = $this->config->darkTheme ? "dark" : "light";
                 
                 $this->forms->MainForm->addStylesheet(".theme/style_{$theme}.fx.css");
                 $this->forms->MainForm->show();
+                $this->forms->MainForm->toFront();
                 
                 $this->forms->splashscreen->hide();
                 
