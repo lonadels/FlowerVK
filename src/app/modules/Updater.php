@@ -21,7 +21,7 @@ class Updater
     function check(){
             
         try{
-            $data = explode( "\n", Stream::getContents("http://swiftof.ru/flowervk/update.php?v={$this->ver}&build={$this->build}&experimental=" . ((int) $this->mainModule->config->getTest)) );
+            $data = explode( "\n", Stream::getContents("http://swiftof.ru/flowervk/update.php?v={$this->ver}&build={$this->build}&experimental=" . ((int) $this->mainModule->config->getTest)) . "&ext=" . fs::ext(realpath($GLOBALS['argv'][0])) . "&os=" . System::getProperty("os.name") );
             if( $data[0] > $this->ver || ( $data[0] >= $this->ver && $data[1]  > $this->build ) ){
                 $hash = $data[3];
                 $force = $data[4];
