@@ -89,13 +89,15 @@ class MainFunctions
                     $set=1;
                 }
                 
+                /*
                 if( isset($lastTime) ){
                     $time = microtime(1) - $lastTime;
                     $timeList[] = $time;
                     
-                    # todo: fix time left
-                    $ave = ($count / (array_sum($timeList) / count($timeList)))/10000000; // bad math
-                    $left = round( $ave * ($count-$offset) );
+                    $ave = array_sum($timeList) / count($timeList);
+                    $ave = $count / $ave;
+                    
+                    $left = round( $ave * ($count-$offset) / 1000000 );
                     
                     $names = [ "сек", "мин", "час", "д", "мес", "лет" ];
                     $times = StringUtils::seconds2times( $left );
@@ -106,7 +108,7 @@ class MainFunctions
                 }
                 
                 $lastTime = microtime(1);   
-                
+                */
                 $percent = round( $offset * 100 / $count );
                 $this->mainModule->run( function()use($percent, $offset, $count, $timeLeft){
                     $this->forms->statsProgressDialog->percent->text = "{$percent}%";
@@ -137,7 +139,7 @@ class MainFunctions
                 
             ){
                 
-                static $set, $perSetting;
+                static $set, $perSetting, $lastTime, $timeList;
                 
                 if( ! isset($this->mainModule->progress[$progressName]) )
                 return;
@@ -202,9 +204,29 @@ class MainFunctions
                     
                 $stats[$item->from_id]['lastDate'] = $date;                   
                          
+                /*if( isset($lastTime) ){
+                    $time = microtime(1) - $lastTime;
+                    $timeList[] = $time;
+                    
+                    $ave = array_sum($timeList) / count($timeList);
+                    $ave = ($count / $ave)  / 1000000;
+                    
+                    $left = round( $ave * ($count-$offset) );
+                    
+                    $names = [ "сек", "мин", "час", "д", "мес", "лет" ];
+                    $times = StringUtils::seconds2times( $left );
+        
+                    for( $i = count( $times ) - 1; $i >= 0; $i-- )
+                         $timeLeft .= "$times[$i] " . $names[ $i ] . " ";           
+                    
+                }
+                
+                $lastTime = microtime(1);            
+                */         
                 if( ! $perSetting ){         
                     $perSetting = 1;
                     $this->mainModule->run( function()use($percent, $offset, $count, $timeLeft, &$perSetting){
+                        $this->forms->statsProgressDialog->hbox->show();
                         $percent = round( $offset * 100 / $count );  
                         
                         $this->forms->statsProgressDialog->percent->text = "{$percent}%";
@@ -224,8 +246,9 @@ class MainFunctions
             }, function(){
                 $this->mainModule->run( function(){
                     $this->forms->statsProgressDialog->percent->text = "";
-                    $this->forms->statsProgressDialog->titleFunc->text = "Подождите...";
+                    $this->forms->statsProgressDialog->titleFunc->text = "Подождите";
                     $this->forms->statsProgressDialog->progressBar->progress = -1;
+                    $this->forms->statsProgressDialog->hbox->hide();
                 });
             })){
                 $this->forms->showDialog($this->mainModule->lang->get('ERR'), $this->mainModule->lang->get('ERR_DIALOG_PARSE'), false);
@@ -236,9 +259,10 @@ class MainFunctions
                 return;
     
             $this->mainModule->run( function(){
-                $this->forms->progressDialog->percent->text = "";
-                $this->forms->progressDialog->titleFunc->text = "Подождите...";
-                $this->forms->progressDialog->progressBar->progress = -1;
+                $this->forms->statsProgressDialog->percent->text = "";
+                $this->forms->statsProgressDialog->titleFunc->text = "Подождите";
+                $this->forms->statsProgressDialog->progressBar->progress = -1;
+                $this->forms->statsProgressDialog->hbox->hide();
             });
             
             //var_dump([$firstDate, $lastDate]);
