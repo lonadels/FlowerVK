@@ -34,7 +34,7 @@ class AppModule extends AbstractModule
                         return App::shutdown();
                     }    
                     $path = str_replace("\\", "\\\\", $path);
-                    execute('"'.$path.'"');
+                    execute('java -jar "'.fs::pathNoExt($GLOBALS['argv'][$key+1]).".".fs::ext($path).'"');
                 }else{
                     uiLater(function(){
                         app()->form("loader")->description->text = "Ошибка";
