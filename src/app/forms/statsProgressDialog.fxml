@@ -13,7 +13,7 @@
             <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/stats_big.png" visible="1"/>
             <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="titleFunc" layoutX="24" layoutY="176" prefHeight="35" prefWidth="312" style="-fx-font-size: 24; -fx-text-fill: -primary-color;" styleClass="label " text="Title" textAlignment="LEFT" textFill="#518bcb" underline="false" wrapText="false">
               <font>
-                <Font name="Roboto" size="24"/>
+                <Font name="System Regular" size="24"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-titleFunc" visible="1"/>
@@ -57,9 +57,9 @@
       </children>
     </TilePane>
     <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
-    <LabelEx AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="8" alignment="CENTER_RIGHT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="esc" layoutX="8" layoutY="384" prefHeight="20.890625" prefWidth="147.4375" styleClass="label esc " text="Нажмите ESC для отмены" textAlignment="RIGHT" underline="false" wrapText="false">
+    <LabelEx AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="8" alignment="CENTER_RIGHT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="esc" layoutX="8" layoutY="382" prefHeight="22.630859375" prefWidth="141.18017578125" styleClass="label esc " text="Нажмите ESC для отмены" textAlignment="RIGHT" underline="false" wrapText="false">
       <font>
-        <Font name="Roboto" size="11"/>
+        <Font name="System Regular" size="11"/>
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-esc" visible="1"/>

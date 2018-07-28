@@ -14,13 +14,13 @@
             <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/update.png" visible="1"/>
             <LabelEx alignment="BOTTOM_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="252" layoutY="215" prefHeight="48" prefWidth="136" style="-fx-text-fill: -primary-color; -fx-font-size: 20;" styleClass="label " text="Обновление" textAlignment="CENTER" textFill="#518bcb" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="20"/>
+                <Font name="Roboto" size="20"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
             <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="220" layoutY="268" opacity="0.4" prefHeight="88" prefWidth="200" styleClass="label " text="Выполняется обновление программы, подождите" textAlignment="CENTER" textFill="#1a1a1a" underline="false" wrapText="true">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>

@@ -13,21 +13,21 @@
             <Insets bottom="10" left="150" right="150" top="0"/>
           </padding>
           <children>
-            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="text1" layoutX="182" layoutY="29" prefHeight="15.9609375" prefWidth="53.625" styleClass="label " text="На номер" textAlignment="LEFT" underline="false" wrapText="false">
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="text1" layoutX="179" layoutY="31" prefHeight="14.0625" prefWidth="53.806640625" styleClass="label " text="На номер" textAlignment="LEFT" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-text1" visible="1"/>
-            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="number" layoutX="239" layoutY="29" prefHeight="15.9609375" prefWidth="89.2265625" style="-fx-text-fill: -primary-color;" styleClass="label " text="+7 123 456 7890" textAlignment="LEFT" textFill="#518bcb" underline="false" wrapText="false">
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="number" layoutX="236" layoutY="31" prefHeight="14.0625" prefWidth="89.8359375" style="-fx-text-fill: -primary-color;" styleClass="label " text="+7 123 456 7890" textAlignment="LEFT" textFill="#518bcb" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-number" visible="1"/>
-            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="text2" layoutX="332" layoutY="29" prefHeight="15.9609375" prefWidth="253.353515625" styleClass="label " text="отправлено СМС с кодом для подтверждения" textAlignment="LEFT" underline="false" wrapText="false">
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="text2" layoutX="329" layoutY="31" prefHeight="14.0625" prefWidth="260.958984375" styleClass="label " text="отправлено СМС с кодом для подтверждения" textAlignment="LEFT" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-text2" visible="1"/>
@@ -47,15 +47,15 @@
         <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/lock.png" visible="1"/>
         <HBox alignment="CENTER" focusTraversable="false" id="hboxAlt" layoutX="0" layoutY="358" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="40" prefWidth="768" spacing="5" styleClass="">
           <children>
-            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="sms" layoutX="256" layoutY="4" prefHeight="32" prefWidth="-1" styleClass="button outline " text="Отправить СМС" textAlignment="CENTER" underline="false" wrapText="false">
+            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="sms" layoutX="253" layoutY="4" prefHeight="32" prefWidth="-1" styleClass="button outline " text="Отправить СМС" textAlignment="CENTER" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </Button>
             <Data cursor="DEFAULT" enabled="1" id="data-sms" visible="1"/>
-            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="ok" layoutX="395" layoutY="4" prefHeight="32" prefWidth="-1" styleClass="button " text="Подтвердить" textAlignment="CENTER" underline="false" wrapText="false">
+            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="ok" layoutX="394" layoutY="4" prefHeight="32" prefWidth="-1" styleClass="button " text="Подтвердить" textAlignment="CENTER" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </Button>
             <Data cursor="DEFAULT" enabled="1" id="data-ok" visible="1"/>
@@ -65,21 +65,21 @@
         <Data cursor="DEFAULT" enabled="1" id="data-flowPane" visible="1"/>
         <HBox alignment="CENTER" focusTraversable="false" id="resendBox" layoutX="0" layoutY="403" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="24" prefWidth="768" spacing="3" styleClass="">
           <children>
-            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="resend" layoutX="238" layoutY="4" prefHeight="15.9609375" prefWidth="235.705078125" styleClass="label " text="Повторная отправка будет доступна через" textAlignment="LEFT" underline="false" wrapText="false">
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="resend" layoutX="234" layoutY="5" prefHeight="14.0625" prefWidth="242.09765625" styleClass="label " text="Повторная отправка будет доступна через" textAlignment="LEFT" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-resend" visible="1"/>
-            <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="resendLeft" layoutX="477" layoutY="4" prefHeight="15.9609375" prefWidth="6.46875" styleClass="label " text="1" textAlignment="LEFT" underline="false" wrapText="false">
+            <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="resendLeft" layoutX="480" layoutY="5" prefHeight="14.0625" prefWidth="6.73828125" styleClass="label " text="1" textAlignment="LEFT" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-resendLeft" visible="1"/>
-            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="second" layoutX="487" layoutY="4" prefHeight="15.9609375" prefWidth="42.884765625" styleClass="label " text="секунду" textAlignment="LEFT" underline="false" wrapText="false">
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="second" layoutX="490" layoutY="5" prefHeight="14.0625" prefWidth="44.63671875" styleClass="label " text="секунду" textAlignment="LEFT" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-second" visible="1"/>

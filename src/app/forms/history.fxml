@@ -24,9 +24,9 @@
         <Data cursor="DEFAULT" enabled="1" id="data-image_load_clock" image="" visible="1"/>
         <VBox AnchorPane.leftAnchor="128" AnchorPane.rightAnchor="368" alignment="CENTER_LEFT" focusTraversable="false" id="vbox12" layoutX="128" layoutY="23" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="50" prefWidth="320" spacing="0" styleClass="">
           <children>
-            <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="userName" layoutX="0" layoutY="8" prefHeight="31.921875" prefWidth="200.82421875" style="-fx-font-size: 24;" styleClass="label " text="История действий" textAlignment="LEFT" textFill="#000000" underline="false" wrapText="false">
+            <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="userName" layoutX="0" layoutY="11" prefHeight="28.125" prefWidth="207.87890625" style="-fx-font-size: 24;" styleClass="label " text="История действий" textAlignment="LEFT" textFill="#000000" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="24"/>
+                <Font name="Roboto" size="24"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-userName" visible="1"/>
@@ -42,23 +42,23 @@
             <Data cursor="DEFAULT" enabled="1" id="data-image_load_back" image="" visible="1"/>
           </children>
         </HBox>
-        <Button AnchorPane.rightAnchor="23" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button5" layoutX="651" layoutY="32" prefHeight="32" prefWidth="-1" styleClass="button " text="Восстановить всё" textAlignment="CENTER" underline="false" wrapText="false">
+        <Button AnchorPane.rightAnchor="23" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button5" layoutX="645" layoutY="32" prefHeight="32" prefWidth="-1" styleClass="button " text="Восстановить всё" textAlignment="CENTER" underline="false" wrapText="false">
           <font>
-            <Font name="System Regular" size="12"/>
+            <Font name="Roboto" size="12"/>
           </font>
         </Button>
         <Data cursor="DEFAULT" enabled="1" id="data-vbox12" visible="1"/>
         <Data cursor="DEFAULT" enabled="1" id="data-hbox21" visible="1"/>
         <Data cursor="DEFAULT" enabled="" id="data-button5" visible="1"/>
-        <Button AnchorPane.rightAnchor="180" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button" layoutX="487" layoutY="32" prefHeight="32" prefWidth="-1" styleClass="button outline " text="Очистить историю" textAlignment="CENTER" underline="false" wrapText="false">
+        <Button AnchorPane.rightAnchor="180" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button" layoutX="484" layoutY="32" prefHeight="32" prefWidth="-1" styleClass="button outline " text="Очистить историю" textAlignment="CENTER" underline="false" wrapText="false">
           <font>
-            <Font name="System Regular" size="12"/>
+            <Font name="Roboto" size="12"/>
           </font>
         </Button>
         <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
       </children>
       <titleFont>
-        <Font name="System Regular" size="12"/>
+        <Font name="Roboto" size="12"/>
       </titleFont>
     </Panel>
     <Data cursor="DEFAULT" enabled="1" id="data-panel11" visible="1"/>

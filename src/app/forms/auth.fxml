@@ -37,7 +37,7 @@
                     <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/vk.png" visible="1"/>
                   </children>
                   <titleFont>
-                    <Font name="System Regular" size="12"/>
+                    <Font name="Roboto" size="12"/>
                   </titleFont>
                 </Panel>
                 <Data cursor="DEFAULT" enabled="1" id="data-panel4" visible="1"/>
@@ -60,7 +60,7 @@
                     </PasswordField>
                     <Button AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="1" AnchorPane.topAnchor="96" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="0" layoutY="96" prefHeight="32" prefWidth="-1" styleClass="button " text="Войти" textAlignment="CENTER" underline="false" wrapText="false">
                       <font>
-                        <Font name="System Regular" size="12"/>
+                        <Font name="Roboto" size="12"/>
                       </font>
                     </Button>
                     <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
@@ -68,7 +68,7 @@
                     <Data cursor="DEFAULT" enabled="1" id="data-login" visible="1"/>
                   </children>
                   <titleFont>
-                    <Font name="System Regular" size="12"/>
+                    <Font name="Roboto" size="12"/>
                   </titleFont>
                 </Panel>
                 <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
@@ -77,7 +77,7 @@
             <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
           </children>
           <titleFont>
-            <Font name="System Regular" size="12"/>
+            <Font name="Roboto" size="12"/>
           </titleFont>
         </Panel>
         <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
@@ -91,15 +91,15 @@
             <Insets bottom="0" left="20" right="20" top="0"/>
           </padding>
           <children>
-            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="20" layoutY="15" prefHeight="20" prefWidth="488" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white" styleClass="label " text="Авторизация" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="20" layoutY="18" prefHeight="20" prefWidth="488" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white" styleClass="label " text="Авторизация" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
               <font>
-                <Font name="System Bold" size="16"/>
+                <Font name="Roboto Bold" size="16"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
-            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="20" layoutY="40" opacity="0.7" prefHeight="16" prefWidth="488" style="-fx-font-size: 12; -fx-text-fill: white" styleClass="label " text="Нажмите для входа в аккаунт по сохранённым данным" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="20" layoutY="38" opacity="0.7" prefHeight="16" prefWidth="488" style="-fx-font-size: 12; -fx-text-fill: white" styleClass="label " text="Нажмите для входа в аккаунт по сохранённым данным" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
               <font>
-                <Font name="System Regular" size="12"/>
+                <Font name="Roboto" size="12"/>
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
@@ -108,7 +108,7 @@
         <Data cursor="DEFAULT" enabled="1" id="data-vboxAlt" visible="1"/>
       </children>
       <titleFont>
-        <Font name="System Regular" size="12"/>
+        <Font name="Roboto" size="12"/>
       </titleFont>
     </Panel>
     <Data cursor="DEFAULT" enabled="1" id="data-panel3" visible="1"/>
