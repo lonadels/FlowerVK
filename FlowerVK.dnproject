@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532765221403">
+<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532766913727">
   <tree>
     <expanded>
     <path src=""/>
@@ -13,7 +13,7 @@
   </tree>
   <openedFiles>
   <file src="FlowerVK.dnproject"/>
-    <file selected="1" src="src/app/modules/MainFunctions.php"/>
+    <file src="src/app/modules/MainFunctions.php"/>
     <file src="src/app/forms/history.php"/>
     <file src="src/app/modules/MainModule.php"/>
     <file src="src/app/modules/AdditionFunctions.php"/>
@@ -27,7 +27,7 @@
     <file src="src/app/modules/Forms.php"/>
     <file src="src/app/modules/vkuser.php"/>
     <file src="src/app/forms/MainForm.php"/>
-    <file src="src/app/modules/Updater.php"/>
+    <file selected="1" src="src/app/modules/Updater.php"/>
     <file src="src/app/forms/auth.php"/>
     <file src="src/app/forms/mainMenu.php"/>
     <file src="src/app/forms/autoAuth.php"/>

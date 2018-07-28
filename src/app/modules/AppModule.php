@@ -24,10 +24,7 @@ class AppModule extends AbstractModule
                         if( ! is_writable($GLOBALS['argv'][$key+1]) ) throw new Exception("No writeable");
                         
                         fs::delete($GLOBALS['argv'][$key+1]);
-                        fs::copy($path, $GLOBALS['argv'][$key+1]);
-                        
-                        if( strtolower( fs::ext($path) ) == "jar" && strtolower( fs::ext($GLOBALS['argv'][$key+1]) ) != "jar" )
-                            fs::rename($GLOBALS['argv'][$key+1], fs::pathNoExt($GLOBALS['argv'][$key+1]) . ".jar");
+                        fs::copy($path, fs::pathNoExt($GLOBALS['argv'][$key+1]).".".fs::ext($path));
                             
                     }catch(Exception $e){
                         uiLater(function(){
