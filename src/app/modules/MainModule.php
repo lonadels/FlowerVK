@@ -71,7 +71,7 @@ class MainModule extends AbstractModule
             $this->checkDirs();
     
             try {
-                $dbfile = $this->dataDir . "\\data.db";
+                $dbfile = $this->dataDir . "/data.db";
 
                 $this->database = new SqliteClient;
                 $this->database->file = $dbfile;
@@ -1340,12 +1340,12 @@ class MainModule extends AbstractModule
     
     public function cachePhoto($url, $name=null, $folder='photos'){
 
-        $this->checkDir($this->dataDir . "\\cache\\{$folder}\\");
+        $this->checkDir($this->dataDir . "/cache/{$folder}/");
         
         if( ! isset($name) )
             $name = basename( explode('?', $url)[0] );
     
-        $file = $this->dataDir . "\\cache\\{$folder}\\" . $name;
+        $file = $this->dataDir . "/cache/{$folder}/" . $name;
     
         try {
             if( ! file_exists( $file ) )
@@ -1373,16 +1373,16 @@ class MainModule extends AbstractModule
     
     public function checkDirs(){
           
-        $this->dataDir = $this->defaultDirectory() . "\\FlowerVK";
+        $this->dataDir = $this->defaultDirectory() . "/FlowerVK";
         
         if( ! is_dir($this->dataDir) )
             mkdir($this->dataDir);
         
-        if( ! is_dir( $this->dataDir . "\\cache") )
-            mkdir($this->dataDir . "\\cache" );
+        if( ! is_dir( $this->dataDir . "/cache") )
+            mkdir($this->dataDir . "/cache" );
             
-        if( ! is_dir( $this->dataDir . "\\update") )
-            mkdir($this->dataDir . "\\update" );
+        if( ! is_dir( $this->dataDir . "/update") )
+            mkdir($this->dataDir . "/update" );
     }
     
     public function checkDir($dir){
