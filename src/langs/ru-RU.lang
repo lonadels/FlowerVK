@@ -5,7 +5,7 @@ CANCEL=Отмена
 ACCEPT=Подтвердить
 EXIT=Выход
 
-DIALOG_SEACH=Поиск диалога
+DIALOG_SEARCH=Поиск диалога
 DEBUG_LOG=Журнал отладки
 VERSION=Версия
 ESC_TEXT=Нажмите ESC для отмены
