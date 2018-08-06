@@ -10,8 +10,8 @@ class Updater
 {
     private $mainModule;
     
-    public $ver = 1.4;
-    public $build = 7;
+    public $ver = 1.5;
+    public $build = 1;
     
     function __construct($mainModule){
         $this->mainModule = $mainModule;        

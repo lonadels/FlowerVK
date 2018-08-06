@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1532862413091">
+<project author="TheLonadels" authorOS="Windows 10" createdAt="1523034279978" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="FlowerVK" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1533594475367">
   <tree>
     <expanded>
     <path src=""/>
       <path src="/src"/>
+      <path src="/src/.data"/>
       <path src="/src/.theme"/>
       <path src="/src/app"/>
       <path src="/src/app/forms"/>
       <path src="/src/app/modules"/>
-      <path src="/src/.data"/>
+      <path src="/vendor"/>
     </expanded>
   </tree>
   <openedFiles>
   <file src="FlowerVK.dnproject"/>
     <file src="src/app/modules/MainFunctions.php"/>
     <file src="src/app/forms/history.php"/>
-    <file selected="1" src="src/app/modules/MainModule.php"/>
+    <file src="src/app/modules/MainModule.php"/>
     <file src="src/app/modules/AdditionFunctions.php"/>
     <file src="src/app/modules/StringUtils.php"/>
     <file src="src/app/modules/AppModule.php"/>
@@ -40,6 +41,8 @@
     <file src="src/app/modules/Localization.php"/>
     <file src="src/app/forms/statsProgressDialog.php"/>
     <file src="src/.theme/font.fx.css"/>
+    <file src="src/app/modules/Request.php"/>
+    <file selected="1" src="src/app/modules/vkapi.php"/>
   </openedFiles>
   <files/>
   <behaviours>
