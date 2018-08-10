@@ -2,6 +2,13 @@ YES=Да
 NO=Нет
 OK=ОК
 CANCEL=Отмена
+ACCEPT=Подтвердить
+EXIT=Выход
+
+DIALOG_SEARCH=Поиск диалога
+DEBUG_LOG=Журнал отладки
+VERSION=Версия
+ESC_TEXT=Нажмите ESC для отмены
 
 ERR=Ошибка
 ERR_AUTH_TITLE=не удаётся войти
@@ -11,6 +18,41 @@ ERR_AUTH_EMPTYLOGIN=необходимо ввести телефон или EMai
 ERR_AUTH_EMPTYPASSWORD=необходимо ввести пароль
 ERR_DIALOG_PARSE=Произошла ошибка во время обработки диалога. Проверьте стабильность интернет-соединения.
 ERR_AUTOAUTH_INCORRECT=возможно, токен устарел
+ERR_RUNTIME=Сбой в работе программы
+ERR_INTERNAL=Произошла внутренняя ошибка
 
 AUTOAUTH_TITLE=автоматический вход
 AUTOAUTH_CONFIRM=войти в аккаунт, используя сохранённые данные?
+
+UPDATE=Обновление
+UPDATE_DESC=Выполняется обновление программы, пожалуйста, подождите
+
+SETTINGS=Настройки
+SETTINGS_CHECKUPDATES=Проверить обновления
+SETTINGS_ABOUT=О программе
+
+SETTINGS_GENERAL=Основные
+SETTINGS_GENERAL_AUTOAUTH=Предлагать автоматическую авторизацию
+SETTINGS_GENERAL_AUTOAUTH_DESC=Открывать окно автоматической авторизации при старте
+SETTINGS_GENERAL_ONLINENOTIFY=Уведомления об онлайне
+SETTINGS_GENERAL_ONLINENOTIFY_DESC=Предупреждать об операциях, устанавливающих статус «онлайн»
+SETTINGS_GENERAL_EXPERIMENTALMODE=Экспериментальный режим
+SETTINGS_GENERAL_EXPERIMENTALMODE_DESC=Включает тестируемый функционал
+
+SETTINGS_INTERFACE=Интерфейс
+SETTINGS_INTERFACE_DARKTHEME=Тёмная тема
+SETTINGS_INTERFACE_DESC=Включение интерфейса в тёмных тонах
+SETTINGS_INTERFACE_DISABLEANIMATIONS=Отключить анимации
+SETTINGS_INTERFACE_DISABLEANIMATIONS_DESC=Повышение производительности на слабых компьютерах
+
+SETTINGS_UPDATE=Обновление
+SETTINGS_UPDATE_AUTOCHECK=Автоматическая проверка обновлений
+SETTINGS_UPDATE_AUTOCHECK_DESC=Проверка наличая новых версий при запуске приложения
+SETTINGS_UPDATE_AUTOUPDATE=Автоматическое обновление
+SETTINGS_UPDATE_AUTOUPDATE_DESC=Автоматическая загрузка при обнаружении новых версий
+SETTINGS_UPDATE_PREVIEWBUILDS=Предварительные сборки
+SETTINGS_UPDATE_PREVIEWBUILDS_DESC=Получение предварительных версий
+
+VALIDATE_TEXT1=На номер
+VALIDATE_TEXT2=отправлено СМС с кодом для подтверждения
+VALIDATE_SEND=Отправить СМС

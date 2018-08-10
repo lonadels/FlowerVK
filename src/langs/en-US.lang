@@ -1,0 +1,58 @@
+YES=Yes
+NO=No
+OK=ОК
+CANCEL=Cancel
+ACCEPT=Accept
+EXIT=Exit
+
+DIALOG_SEARCH=Dialog search
+DEBUG_LOG=Debug log
+VERSION=Version
+ESC_TEXT=Press ESC for cancel
+
+ERR=Error
+ERR_AUTH_TITLE=сan't log in
+ERR_AUTH_INCORRECT=please check login and password
+ERR_AUTH_EMPTYDATA=need fill all fields
+ERR_AUTH_EMPTYLOGIN=need fill phone number or EMail
+ERR_AUTH_EMPTYPASSWORD=need fiil password
+ERR_DIALOG_PARSE=An error occurred of dialog handling. Check stability of your internet connection.
+ERR_AUTOAUTH_INCORRECT=maybe token is old
+ERR_RUNTIME=The failure of application
+ERR_INTERNAL=An internal error occurred
+
+AUTOAUTH_TITLE=auto auth
+AUTOAUTH_CONFIRM=log in to your account using your saved data?
+
+UPDATE=Update
+UPDATE_DESC=Application update in progress, please wait
+
+SETTINGS=Settings
+SETTINGS_CHECKUPDATES=Check updates
+SETTINGS_ABOUT=About
+
+SETTINGS_GENERAL=General
+SETTINGS_GENERAL_AUTOAUTH=Auto auth
+SETTINGS_GENERAL_AUTOAUTH_DESC=Open the auto auth window at startup
+SETTINGS_GENERAL_ONLINENOTIFY=Online notifications
+SETTINGS_GENERAL_ONLINENOTIFY_DESC=Warn about online operations
+SETTINGS_GENERAL_EXPERIMENTALMODE=Experimental mode
+SETTINGS_GENERAL_EXPERIMENTALMODE_DESC=Enable experimental functionality
+
+SETTINGS_INTERFACE=Interface
+SETTINGS_INTERFACE_DARKTHEME=Dark theme
+SETTINGS_INTERFACE_DESC=Enable interface in dark colors
+SETTINGS_INTERFACE_DISABLEANIMATIONS=Disable animations
+SETTINGS_INTERFACE_DISABLEANIMATIONS_DESC=Improving performance on slower computers
+
+SETTINGS_UPDATE=Update
+SETTINGS_UPDATE_AUTOCHECK=Auto check of updates
+SETTINGS_UPDATE_AUTOCHECK_DESC=Check for new versions available when launching the application
+SETTINGS_UPDATE_AUTOUPDATE=Auto update
+SETTINGS_UPDATE_AUTOUPDATE_DESC=Automatic download when new versions are available
+SETTINGS_UPDATE_PREVIEWBUILDS=Preview builds
+SETTINGS_UPDATE_PREVIEWBUILDS_DESC=Get preview builds
+
+VALIDATE_TEXT1=On number
+VALIDATE_TEXT2=sent SMS with code for confirmation
+VALIDATE_SEND=Send SMS
