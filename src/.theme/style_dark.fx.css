@@ -1,0 +1,173 @@
+@import 'font.fx.css';
+@import 'progress.fx.css';
+@import 'button.fx.css';
+@import 'textField.fx.css';
+@import 'checkbox.fx.css';
+@import 'scrollbar.fx.css';
+
+* {
+    -default: #181818;  
+    //-default-light: #181818;  
+    -default-inverse: white;  
+        
+    -text-opacity: rgba(255,255,255,0.4);      
+    -text-gray: #D0D0D0;      
+    -text-dark-gray: #747474;      
+    -text: white;      
+        
+    -primary-color: rgb(81,139,203); // #518BCB
+    -primary-lighter: rgb(88,151,219);
+    -primary-darker: rgb(71,123,178);
+    
+    -gray: #1D1D1D;
+    -light-gray: #212121;
+    -super-light-gray: #2A2A2A;
+    -light-gray2: #353535;
+}
+
+.vmenu {
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.3), 25, 0, 0, 6);-fx-background-color: -default;
+}
+
+
+* {
+    -fx-text-fill: -default-inverse;
+}
+
+.label.esc {
+    -fx-font-size: 11; -fx-background-color: -text-opacity; -fx-padding: 4 6; -fx-background-radius: 5; -fx-text-fill: -default; 
+}
+
+.window {
+    -fx-background-color: -default;
+}
+.tr {
+    -fx-background-color: transparent;
+}
+
+.loaderRect {
+    -fx-background-color: -default;
+    -fx-fill: -default;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.10), 10, 0, 0, 2);
+}
+
+.windowRect {
+    -fx-background-color: -default;
+    -fx-fill: -default;
+    -fx-effect: dropshadow(two-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 2);
+}
+
+.trPane {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.autoAuth {
+    -fx-background-color: -primary-color;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 0);
+}
+
+.autoAuth:hover {
+    -fx-background-color: -primary-lighter;
+}
+
+.autoAuth:pressed {
+    -fx-background-color: -primary-darker;
+}
+
+.autoAuthItem {
+    -fx-background-color: -default;
+    -fx-min-height: 72;
+}
+
+.autoAuthItem.line {
+    -fx-background-color: -light-gray, -default;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.autoAuthItem.line:hover {
+    -fx-background-color: -light-gray, -light-gray;
+}
+
+.autoAuthItem:hover {
+    -fx-background-color: -light-gray;
+}
+
+.autoAuthItem:pressed {
+    -fx-background-color: -gray;
+}
+
+.autoAuthItem.line:pressed {
+    -fx-background-color: -gray;
+}
+
+.title {
+    -fx-background-color: -light-gray, -default;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 8 0;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.title.tr {
+    -fx-background-color: transparent;
+}
+
+.icon {
+    -fx-opacity: 0.7;
+}
+
+.iconDown {
+    -fx-opacity: 0.850;
+}
+
+.icon.very {
+    -fx-opacity: 0.15;
+}
+
+.icon.very:hover {
+    -fx-opacity: 0.35;
+}
+
+.iconDown:hover {
+    -fx-opacity: 0.999;
+}
+
+.icon:hover {
+    -fx-opacity: 0.999;
+}
+
+.link {
+    -fx-text-fill: -primary-color;
+    -fx-cursor: hand;
+}
+
+.link:hover {
+    -fx-text-fill: -primary-lighter;
+}
+
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 5);
+}
+
+.item:hover {
+    -fx-background-color: -light-gray;
+}
+
+.funcItem {
+    -fx-background-color: -default;
+    -fx-min-height: 64;
+    -fx-min-width: 120;
+    -fx-background-radius: 5;
+}
+
+.funcItem.main {
+    -fx-background-radius: 0;
+}
+
+.funcItem.drag {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 15, 0, 0, 0);
+}
+.funcItem:hover, .funcItem:focused {
+    -fx-background-color: -light-gray;
+}

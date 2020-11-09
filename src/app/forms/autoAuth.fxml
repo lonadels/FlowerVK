@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424" prefWidth="640" styleClass="window tr ">
+  <children>
+    <TilePane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" hgap="5" id="tilePane" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="424" prefRows="5" prefWidth="640" styleClass="" tileAlignment="CENTER" vgap="5">
+      <children>
+        <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="5" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="144" layoutY="184" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="56" prefWidth="352" styleClass="loaderRect " titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <VBox alignment="TOP_LEFT" focusTraversable="false" id="vbox" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="56" prefWidth="352" spacing="0" styleClass="">
+              <padding>
+                <Insets bottom="6" left="0" right="0" top="6"/>
+              </padding>
+              <children/>
+            </VBox>
+            <Data cursor="DEFAULT" enabled="1" id="data-vbox" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+      </children>
+    </TilePane>
+    <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
+    <LabelEx AnchorPane.bottomAnchor="14" AnchorPane.leftAnchor="16" alignment="CENTER_RIGHT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="esc" layoutX="16" layoutY="394" prefHeight="14.630859375" prefWidth="195.92138671875" style="-fx-font-size: 11" styleClass="label " text="Нажмите ESC для ручной авторизации" textAlignment="RIGHT" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="11"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-esc" visible="1"/>
+  </children>
+</AnchorPane>

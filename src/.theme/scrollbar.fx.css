@@ -1,0 +1,96 @@
+
+.scroll-bar .increment-button {
+  -fx-visibility: hidden;
+  -fx-background-color: -default;
+  -fx-padding: 0;
+  -fx-pref-width: 0;
+}
+
+.scroll-bar .decrement-button {
+  -fx-visibility: hidden;
+  -fx-background-color: -default;
+  -fx-padding: 0;
+  -fx-pref-width: 0;
+}
+
+.scroll-bar .increment-arrow {
+  -fx-visibility: hidden;
+  -fx-padding: 0;
+  -fx-pref-width: 0;
+  -fx-background-color: -default;
+}
+
+.scroll-bar .decrement-arrow {
+  visibility: hidden;
+  -fx-padding: 0;
+  -fx-pref-width: 0;
+  -fx-background-color: -default;
+}
+
+.scroll-bar:vertical {
+  -fx-pref-width: 8;
+  -fx-padding: 0;
+  -fx-border-radius: 10;
+  -fx-background-color: -default;
+}
+
+.scroll-bar:horizontal {
+  -fx-pref-height: 6;
+  -fx-padding: 0;
+  -fx-border-radius: 8;
+  -fx-background-color: -default;
+  
+}
+
+.scroll-bar:vertical:hover, .scroll-bar:vertical:pressed, .scroll-bar:horizontal:hover, .scroll-bar:horizontal:pressed {
+  -fx-padding: 0;
+}
+
+
+.scroll-bar:vertical .track-background, .scroll-bar:horizontal .track-background {
+  -fx-pref-width: 0;
+  -fx-padding: 0;
+  -fx-visibility: hidden;
+  -fx-background-color: -default;
+}
+
+.scroll-bar:vertical .track, .scroll-bar:horizontal .track{
+  -fx-visibility: hidden;
+  -fx-background-color: -default;
+  -fx-pref-width: 0;
+  -fx-padding: 0;
+}
+
+
+.hide-thumb .scroll-bar .thumb {
+  -fx-background-color: -default;
+  -fx-pref-width: 0;
+  -fx-padding: 0;
+}
+
+
+.scroll-bar .thumb {
+  -fx-background-color: -primary-color;
+  -fx-opacity: 0.8;
+  -fx-pref-width: 8;
+  -fx-padding: 0;
+}
+
+.scroll-bar:hover .thumb, .scroll-bar:pressed .thumb  {
+  -fx-opacity: 1;
+  -fx-padding: 0;
+  -fx-pref-width: 0;
+  -fx-background-color: -primary-color;
+}
+
+.scroll-bar:horizontal .thumb {
+  -fx-background-color: -gray;
+  -fx-opacity: 0.1;
+  -fx-padding: 0;
+}
+.scroll-bar:horizontal:hover .thumb, .scroll-bar:horizontal:pressed .thumb {
+  -fx-background-color: -super-light-gray;
+  -fx-opacity: 0.3;
+  -fx-padding: 0;
+}
+

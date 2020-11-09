@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448" prefWidth="568" styleClass="window tr ">
+  <children>
+    <TilePane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" hgap="5" id="tilePane" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="448" prefRows="5" prefWidth="568" styleClass="" tileAlignment="CENTER" vgap="5">
+      <children>
+        <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="5" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="12" layoutY="52" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="344" prefWidth="544" styleClass="loaderRect " titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <HBox AnchorPane.bottomAnchor="24" AnchorPane.leftAnchor="16" AnchorPane.rightAnchor="16" alignment="BOTTOM_RIGHT" focusTraversable="false" id="hbox" layoutX="16" layoutY="288" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="32" prefWidth="512" spacing="5" styleClass="">
+              <children>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="" focusTraversable="true" graphicTextGap="4" id="buttonOk" layoutX="449" layoutY="0" prefHeight="32" prefWidth="-1" styleClass="button " text="OK" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-buttonOk" visible="1"/>
+              </children>
+            </HBox>
+            <Data cursor="DEFAULT" enabled="1" id="data-hbox" visible="1"/>
+            <ScrollPane AnchorPane.bottomAnchor="64" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="8" fitToHeight="true" fitToWidth="true" focusTraversable="false" hbarPolicy="NEVER" hvalue="0" id="container" layoutX="0" layoutY="8" prefHeight="272" prefWidth="544" style="-fx-background: white;" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+              <content>
+                <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="272" prefWidth="544" styleClass="">
+                  <children>
+                    <TilePane AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="TOP_LEFT" focusTraversable="false" hgap="5" id="tilePaneAlt" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="272" prefRows="5" prefWidth="544" style="-fx-background-color: -default;" styleClass="" tileAlignment="CENTER" vgap="5">
+                      <padding>
+                        <Insets bottom="8" left="16" right="16" top="8"/>
+                      </padding>
+                      <children/>
+                    </TilePane>
+                    <Data cursor="DEFAULT" enabled="1" id="data-tilePaneAlt" visible="1"/>
+                  </children>
+                </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Data cursor="DEFAULT" enabled="1" id="data-container" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="Roboto" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+      </children>
+    </TilePane>
+    <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
+  </children>
+</AnchorPane>

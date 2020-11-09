@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552" prefWidth="784" styleClass="window ">
+  <children>
+    <VBox AnchorPane.bottomAnchor="8" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="8" alignment="CENTER" focusTraversable="false" id="vbox" layoutX="8" layoutY="8" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="536" prefWidth="768" spacing="5" styleClass="">
+      <children>
+        <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="88" id="image" layoutX="340" layoutY="109" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="88">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <FlowPane alignment="BOTTOM_CENTER" columnHalignment="CENTER" focusTraversable="false" hgap="3" id="flowPane" layoutX="0" layoutY="202" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefHeight="56" prefWidth="768" rowValignment="CENTER" styleClass="" vgap="3">
+          <padding>
+            <Insets bottom="10" left="150" right="150" top="0"/>
+          </padding>
+          <children>
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="text1" layoutX="179" layoutY="31" prefHeight="14.0625" prefWidth="53.806640625" styleClass="label " text="На номер" textAlignment="LEFT" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-text1" visible="1"/>
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="number" layoutX="236" layoutY="31" prefHeight="14.0625" prefWidth="89.8359375" style="-fx-text-fill: -primary-color;" styleClass="label " text="+7 123 456 7890" textAlignment="LEFT" textFill="#518bcb" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-number" visible="1"/>
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="text2" layoutX="329" layoutY="31" prefHeight="14.0625" prefWidth="260.958984375" styleClass="label " text="отправлено СМС с кодом для подтверждения" textAlignment="LEFT" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-text2" visible="1"/>
+          </children>
+        </FlowPane>
+        <HBox alignment="CENTER" focusTraversable="false" id="hbox" layoutX="0" layoutY="263" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="90" prefWidth="768" spacing="10" styleClass="">
+          <children>
+            <MaskTextField alignment="CENTER" editable="true" focusTraversable="true" id="edit1" layoutX="260" layoutY="10" mask="D D D D D D" placeholder="" plainText="" prefColumnCount="12" prefHeight="64" prefWidth="248" promptText="" style="-fx-alignment: center; -fx-font-size: 48;" styleClass="text-input text-field ">
+              <font>
+                <Font name="System Regular" size="48"/>
+              </font>
+            </MaskTextField>
+            <Data cursor="DEFAULT" enabled="1" id="data-edit1" visible="1"/>
+          </children>
+        </HBox>
+        <Data cursor="DEFAULT" enabled="1" id="data-hbox" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/lock.png" visible="1"/>
+        <HBox alignment="CENTER" focusTraversable="false" id="hboxAlt" layoutX="0" layoutY="358" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="40" prefWidth="768" spacing="5" styleClass="">
+          <children>
+            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="sms" layoutX="253" layoutY="4" prefHeight="32" prefWidth="-1" styleClass="button outline " text="Отправить СМС" textAlignment="CENTER" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </Button>
+            <Data cursor="DEFAULT" enabled="1" id="data-sms" visible="1"/>
+            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="ok" layoutX="394" layoutY="4" prefHeight="32" prefWidth="-1" styleClass="button " text="Подтвердить" textAlignment="CENTER" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </Button>
+            <Data cursor="DEFAULT" enabled="1" id="data-ok" visible="1"/>
+          </children>
+        </HBox>
+        <Data cursor="DEFAULT" enabled="1" id="data-hboxAlt" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-flowPane" visible="1"/>
+        <HBox alignment="CENTER" focusTraversable="false" id="resendBox" layoutX="0" layoutY="403" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="24" prefWidth="768" spacing="3" styleClass="">
+          <children>
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="resend" layoutX="234" layoutY="5" prefHeight="14.0625" prefWidth="242.09765625" styleClass="label " text="Повторная отправка будет доступна через" textAlignment="LEFT" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-resend" visible="1"/>
+            <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="resendLeft" layoutX="480" layoutY="5" prefHeight="14.0625" prefWidth="6.73828125" styleClass="label " text="1" textAlignment="LEFT" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-resendLeft" visible="1"/>
+            <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="second" layoutX="490" layoutY="5" prefHeight="14.0625" prefWidth="44.63671875" styleClass="label " text="секунду" textAlignment="LEFT" underline="false" wrapText="false">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-second" visible="1"/>
+          </children>
+        </HBox>
+        <Data cursor="DEFAULT" enabled="1" id="data-resendBox" visible="1"/>
+      </children>
+    </VBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-vbox" visible="1"/>
+  </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504" prefWidth="744" styleClass="window tr ">
+  <children>
+    <TilePane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="TOP_CENTER" focusTraversable="false" hgap="5" id="tilePane" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="504" prefRows="5" prefWidth="744" styleClass="" tileAlignment="TOP_CENTER" vgap="5">
+      <padding>
+        <Insets bottom="0" left="0" right="0" top="40"/>
+      </padding>
+      <children>
+        <Panel AnchorPane.leftAnchor="16" AnchorPane.rightAnchor="160" AnchorPane.topAnchor="40" backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="5" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="8" layoutY="40" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="424" prefWidth="728" styleClass="loaderRect " titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <ScrollPane AnchorPane.bottomAnchor="8" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="48" fitToHeight="true" fitToWidth="true" focusTraversable="false" hbarPolicy="NEVER" hvalue="0" id="container" layoutX="0" layoutY="48" prefHeight="368" prefWidth="728" style="-fx-background: -default;" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+              <content>
+                <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="368" prefWidth="728" styleClass="">
+                  <children>
+                    <LabelEx AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="0" layoutY="0" opacity="0.7" prefHeight="400" prefWidth="728" styleClass="label " text="Загрузка диалогов..." textAlignment="LEFT" underline="false" wrapText="false">
+                      <font>
+                        <Font name="Roboto" size="12"/>
+                      </font>
+                    </LabelEx>
+                    <VBox AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="TOP_LEFT" focusTraversable="false" id="vbox" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="32" prefWidth="728" spacing="0" styleClass="">
+                      <children/>
+                    </VBox>
+                    <Data cursor="DEFAULT" enabled="1" id="data-vbox" visible="1"/>
+                    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+                  </children>
+                </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Data cursor="DEFAULT" enabled="1" id="data-container" visible="1"/>
+            <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="edit" layoutX="0" layoutY="8.0000152587891" prefColumnCount="12" prefHeight="40" prefWidth="728" promptText="Поиск диалога" style="-fx-padding: 0 10 8 16;" styleClass="text-input text-field " text="">
+              <font>
+                <Font name="Roboto" size="12"/>
+              </font>
+            </TextField>
+            <Data cursor="DEFAULT" enabled="1" id="data-edit" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="Roboto" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+      </children>
+    </TilePane>
+    <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
+    <LabelEx AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="8" alignment="CENTER_RIGHT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="esc" layoutX="8" layoutY="470" prefHeight="22.630859375" prefWidth="141.18017578125" styleClass="label esc " text="Нажмите ESC для отмены" textAlignment="RIGHT" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="11"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-esc" visible="1"/>
+  </children>
+</AnchorPane>

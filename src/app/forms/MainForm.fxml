@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592" prefWidth="832" styleClass="window tr ">
+  <children>
+    <TilePane AnchorPane.bottomAnchor="8" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="8" alignment="CENTER" focusTraversable="false" hgap="5" id="tilePane" layoutX="8" layoutY="8" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="576" prefRows="5" prefWidth="816" styleClass="" tileAlignment="CENTER" vgap="5">
+      <children>
+        <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="36" layoutY="36" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="504" prefWidth="744" styleClass="windowRect " titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment" layoutX="0" layoutY="32" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="472" prefWidth="744" spacing="0" styleClass="fragment-pane "/>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="0" layoutY="0" prefHeight="32" prefWidth="744" styleClass="label title " text="" textAlignment="LEFT" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
+            <Data content="mainMenu" cursor="DEFAULT" enabled="1" id="data-fragment" visible="1"/>
+            <TilePane alignment="CENTER" focusTraversable="false" hgap="5" id="tilePaneAlt" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="504" prefRows="5" prefWidth="744" style="-fx-background-color: rgba(0,0,0,0.4);" styleClass="" tileAlignment="CENTER" vgap="5">
+              <children>
+                <FragmentPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="160" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" id="fragmentAlt" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="504" prefWidth="744" spacing="0" styleClass="fragment-pane "/>
+                <Data content="modalDialog" cursor="DEFAULT" enabled="1" id="data-fragmentAlt" visible="1"/>
+              </children>
+            </TilePane>
+            <Data cursor="DEFAULT" enabled="1" id="data-tilePaneAlt" visible=""/>
+            <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+            <Panel backgroundColor="#00000000" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panelAlt" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="35" prefWidth="744" styleClass="trPane " titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+              <children>
+                <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="32" id="ico" layoutX="2" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="32">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-ico" image="" visible="1"/>
+                <HBox AnchorPane.leftAnchor="32" AnchorPane.rightAnchor="128" AnchorPane.topAnchor="0" alignment="CENTER_LEFT" focusTraversable="false" id="hbox" layoutX="32" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="32" prefWidth="584" spacing="4" styleClass="">
+                  <children>
+                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="0" layoutY="9" prefHeight="14.0625" prefWidth="51.392578125" style="-fx-font-family: &quot;Roboto Medium&quot;;" styleClass="label " text="FlowerVK" textAlignment="LEFT" underline="false" wrapText="false">
+                      <font>
+                        <Font name="Roboto Medium" size="12"/>
+                      </font>
+                    </LabelEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+                    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="description" layoutX="56" layoutY="8" opacity="0.7" prefHeight="15.9609375" prefWidth="0" styleClass="label " text="" textAlignment="LEFT" underline="false" wrapText="false">
+                      <font>
+                        <Font name="System Regular" size="12"/>
+                      </font>
+                    </LabelEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-description" visible="1"/>
+                  </children>
+                </HBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-hbox" visible="1"/>
+                <HBox AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER_RIGHT" focusTraversable="false" id="hboxAlt" layoutX="629" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="32" prefWidth="115" spacing="7" styleClass="">
+                  <padding>
+                    <Insets bottom="0" left="0" right="5" top="0"/>
+                  </padding>
+                  <children>
+                    <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="32" id="min" layoutX="24" layoutY="0" mosaic="false" mosaicGap="0" opacity="0.7" proportional="false" stretch="false" styleClass="icon " textFill="#000000" width="24">
+                      <font>
+                        <Font name="System Regular" size="12"/>
+                      </font>
+                    </ImageViewEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-min" image="" visible="1"/>
+                    <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="32" id="max" layoutX="55" layoutY="0" mosaic="false" mosaicGap="0" opacity="0.4" proportional="false" stretch="false" styleClass=" " textFill="#000000" width="24">
+                      <font>
+                        <Font name="System Regular" size="12"/>
+                      </font>
+                    </ImageViewEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-max" image="" visible="1"/>
+                    <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="32" id="close" layoutX="86" layoutY="0" mosaic="false" mosaicGap="0" opacity="0.7" proportional="false" stretch="false" styleClass="icon " textFill="#000000" width="24">
+                      <font>
+                        <Font name="System Regular" size="12"/>
+                      </font>
+                    </ImageViewEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-close" image="" visible="1"/>
+                  </children>
+                </HBox>
+                <Data cursor="DEFAULT" enabled="1" id="data-hboxAlt" visible="1"/>
+              </children>
+              <titleFont>
+                <Font name="System Regular" size="12"/>
+              </titleFont>
+            </Panel>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+      </children>
+    </TilePane>
+    <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
+  </children>
+</AnchorPane>
